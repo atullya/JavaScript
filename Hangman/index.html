@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <div id="show"></div>
+    <div id="incorrect-guesses"></div>
+    <input type="text" id="guess" maxlength="1" />
+    <button onclick="makeGuess()">Guess</button>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url(blackback.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+      }
+      span {
+        display: inline-block;
+        width: 20px;
+        text-align: center;
+        font-size: 24px;
+      }
+      #incorrect-guesses {
+        margin-top: 20px;
+        color: red;
+      }
+    </style>
+
+    <script>
+      let wordarr = [
+        "computer",
+        "apple",
+        "mouse",
+        "banana",
+        "certificate",
+        "bagpack",
+        "ragging",
+        "housing",
+        "question",
+        "marks",
+        "hangover",
+      ];
+      let randomNumber = Math.floor(Math.random() * wordarr.length);
+      let selectedWord = wordarr[randomNumber];
+      let guessedLetters = [];
+      let incorrectGuesses = [];
+      const maxAttempts = 6;
+
+      function displayWord() {
+        let display = "";
+        for (let i = 0; i < selectedWord.length; i++) {
+          display += guessedLetters.includes(selectedWord[i])
+            ? `<span>${selectedWord[i]}</span>`
+            : `<span>__</span>`;
+        }
+        document.getElementById("show").innerHTML = display;
+      }
+
+      function makeGuess() {
+        let guess = document.getElementById("guess").value.toLowerCase();
+        if (guess && !guessedLetters.includes(guess)) {
+          if (selectedWord.includes(guess)) {
+            guessedLetters.push(guess);
+          } else {
+            incorrectGuesses.push(guess);
+            if (incorrectGuesses.length >= maxAttempts) {
+              alert("Game over! The word was: " + selectedWord);
+              resetGame();
+              return;
+            }
+          }
+          displayWord();
+          document.getElementById("incorrect-guesses").innerHTML =
+            "Incorrect guesses: " + incorrectGuesses.join(", ");
+          if (checkWin()) {
+            alert("Congratulations! You guessed the word: " + selectedWord);
+            resetGame();
+          }
+        }
+        document.getElementById("guess").value = "";
+      }
+
+      function checkWin() {
+        return selectedWord
+          .split("")
+          .every((letter) => guessedLetters.includes(letter));
+      }
+
+      function resetGame() {
+        randomNumber = Math.floor(Math.random() * wordarr.length);
+        selectedWord = wordarr[randomNumber];
+        guessedLetters = [];
+        incorrectGuesses = [];
+        displayWord();
+        document.getElementById("incorrect-guesses").innerHTML = "";
+      }
+
+      displayWord();
+    </script>
+  </body>
+</html>

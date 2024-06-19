@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("hello");
+
+      // Get current date and time
+      const now = new Date();
+      const currentDateTime = now.toISOString(); // ISO format is a common format for date and time
+
+      // Send the POST request with the current date and time
+      fetch("https://reqres.in/api/users", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: "User1",
+          rollno: "12",
+          datetime: currentDateTime,
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .catch((error) => console.log("ERROR"));
+      let para = data;
+      para.map((element) => {
+        `<p>${element.name}<br></p>
+            p>${element.rollno}<br></p>
+            p>${element.datetime}<br></p>
+            `;
+        document.body.innerHTML(para);
+      });
+    </script>
+  </body>
+</html>

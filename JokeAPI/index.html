@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" placeholder="search" id="search" />
+    <button onclick="getData()">Click Here</button>
+    <div id="content"></div>
+    <script>
+      let getData = async () => {
+        try {
+          let response = await fetch(`https://v2.jokeapi.dev/joke/Any`);
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          let data = await response.json();
+          console.log(data);
+
+          let content = `
+            <p>Category: ${data.category}</p>
+            <p>Type: ${data.type}</p>
+          `;
+
+          if (data.type === "twopart") {
+            content += `
+              <p>Setup: ${data.setup || "N/A"}</p>
+              <p>Delivery: ${data.delivery || "N/A"}</p>
+            `;
+          } else if (data.type === "single") {
+            content += `
+              <p>Joke: ${data.joke || "N/A"}</p>
+            `;
+          }
+
+          document.getElementById("content").innerHTML = content;
+        } catch (error) {
+          console.error("Error:", error);
+          document.getElementById(
+            "content"
+          ).innerHTML = `<p>Error: ${error.message}</p>`;
+        }
+      };
+    </script>
+  </body>
+</html>

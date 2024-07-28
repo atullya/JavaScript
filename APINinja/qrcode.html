@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>QR Code Generator</h1>
+    <input type="text" id="urlInput" placeholder="Enter website URL" />
+    <button onclick="generateQRCode()">Generate QR Code</button>
+    <div id="qrCodeContainer"></div>
+
+    <script>
+      function generateQRCode() {
+        var data = $("#urlInput").val();
+        var format = "png"; // Can be png, jpg, jpeg, eps, svg
+        var size = 300; // Optional size parameter
+
+        $.ajax({
+          method: "GET",
+          url: `https://api.api-ninjas.com/v1/qrcode?data=${encodeURIComponent(
+            data
+          )}&format=${format}&size=${size}`,
+          headers: {
+            "X-Api-Key": "+QSRa+Vn43LM0PY4ltR8bA==Pg5ubnXHgv6Bj7gp",
+            Accept: `image/${format}`,
+          },
+          xhrFields: {
+            responseType: "blob", // This will handle the binary data
+          },
+          success: function (blob) {
+            const url = window.URL.createObjectURL(blob);
+            $("#qrCodeContainer").html(
+              `<img src="${url}" alt="QR Code" height="250px" width="250px">`
+            );
+          },
+          error: function ajaxError(jqXHR) {
+            console.error("Error: ", jqXHR.responseText);
+          },
+        });
+      }
+    </script>
+  </body>
+</html>

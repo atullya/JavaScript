@@ -1,0 +1,89 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Image</title>
+  </head>
+  <body>
+    <div id="image-container">
+      <button onclick="getData()">Get Random Nature Image</button>
+      <br />
+      <img
+        id="random-image"
+        alt="Random Nature Image"
+        style="max-width: 100%; display: none"
+      />
+    </div>
+    <script>
+      async function getData() {
+        let response = await fetch(
+          "https://api.api-ninjas.com/v1/randomimage?category=nature",
+          //   "https://api.api-ninjas.com/v1/motorcycles?make=kawasaki&model=ninja",
+          {
+            headers: {
+              "X-Api-Key": "+QSRa+Vn43LM0PY4ltR8bA==Pg5ubnXHgv6Bj7gp",
+            },
+          }
+        );
+
+        if (response.ok) {
+          let blob = await response.blob();
+          console.log(blob);
+          let imgUrl = URL.createObjectURL(blob);
+
+          let imgElement = document.getElementById("random-image");
+          imgElement.src = imgUrl;
+          imgElement.style.display = "block";
+        } else {
+          console.error("Error fetching the image:", response.statusText);
+        }
+      }
+    </script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Image</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="image-container">
+      <button onclick="getRandomImage()">Get Random Nature Image</button>
+      <br />
+      <img
+        id="random-image"
+        alt="Random Nature Image"
+        style="max-width: 100%; display: none"
+      />
+    </div>
+    <script>
+      function getRandomImage() {
+        var category = "nature";
+        $.ajax({
+          method: "GET",
+          url: "https://api.api-ninjas.com/v1/randomimage?category=" + category,
+          headers: {
+            "X-Api-Key": "+QSRa+Vn43LM0PY4ltR8bA==Pg5ubnXHgv6Bj7gp",
+            Accept: "image/jpeg",
+          },
+          xhrFields: {
+            responseType: "blob", // This tells jQuery to expect a Blob response
+          },
+          success: function (blob) {
+            var imgUrl = URL.createObjectURL(blob);
+            var imgElement = document.getElementById("random-image");
+            imgElement.src = imgUrl;
+            imgElement.style.display = "block";
+          },
+          error: function (jqXHR) {
+            console.error("Error: ", jqXHR.responseText);
+          },
+        });
+      }
+    </script>
+  </body>
+</html>

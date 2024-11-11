@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let getData = async () => {
+        try {
+          let response = await fetch("people.json");
+          console.log(response);
+          if (!response.ok) {
+            throw new Error("Can't connect");
+          }
+          let data = await response.json();
+          let content = "";
+
+          data.forEach((para) => {
+            // To display names in the document
+            content += `<b>Name:${para.name}</b>
+              <p>Id:${para.id}</p>
+              <p>Address:${para.address}</p>
+              <p>Phone:${para.phone}</p>
+              <br><br>
+              
+              `;
+          });
+          document.write(content);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+      getData();
+      // fetch("people.json")
+      //   .then((response) => response.json())
+      //   .then((data) => {
+      //     console.log(data);
+      //     let content = "";
+
+      //     data.forEach((para) => {
+      //       // To display names in the document
+      //       content += `<b>Name:${para.name}</b>
+      //                   <p>Id:${para.id}</p>
+      //                   <p>Address:${para.address}</p>
+      //                   <p>Phone:${para.phone}</p>
+      //                   <br><br>
+
+      //                   `;
+      //     });
+      //     document.write(content);
+      //   })
+      //   .catch((error) => {
+      //     console.error("Error fetching data:", error);
+      //   });
+    </script>
+  </body>
+</html>

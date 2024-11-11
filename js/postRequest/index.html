@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="show"></p>
+    <form action="">
+      Name: <input type="text" id="name" placeholder="Your Name" /><br />
+      Roll No:
+      <input type="number" id="roll" placeholder="Your Roll No" /><br />
+      Address:
+      <input type="text" id="address" placeholder="Your Address" /><br />
+      <button type="button" onclick="verify()">Verify</button>
+    </form>
+    <script>
+      let apiData = {};
+
+      async function getData() {
+        let response = await fetch("https://reqres.in/api/users", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: "Atullya",
+            Rollno: 5,
+            Address: "Bafal",
+          }),
+        });
+        console.log(response);
+        console.log(response.status);
+        let data = await response.json();
+        console.log(data);
+
+        apiData = {
+          name: data.name,
+          roll: data.Rollno,
+        };
+
+        let allData = `<p>Name: ${apiData.name}</p>
+                       <p>Roll No: ${apiData.roll}</p>
+                       <p>Address: ${data.Address}</p>`;
+        document.getElementById("show").innerHTML = allData;
+      }
+
+      getData();
+
+      function verify() {
+        let name = document.getElementById("name").value;
+        let roll = document.getElementById("roll").value;
+
+        if (name === "" || roll == "") {
+          alert("Fileds can't be empty");
+        }
+        if (name === apiData.name && roll == apiData.roll) {
+          alert("The data is the same!");
+        } else {
+          alert("The data is different.");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discogs API Example</title>
+  </head>
+  <body>
+    <h1>Discogs API Data</h1>
+    <div id="data"></div>
+
+    <script>
+      async function getData() {
+        try {
+          // Fetch data from the Discogs API
+          let response = await fetch("https://api.discogs.com/");
+
+          // Check if the response is OK
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+
+          // Parse the JSON data
+          let data = await response.json();
+
+          // Log the data to the console for debugging
+          console.log(data);
+
+          // Create a content string to display the data
+          let content = `
+            <p>Hello: ${data.hello}</p>
+            <p>API Version: ${data.api_version}</p>
+            <p>Documentation URL: <a href="${data.documentation_url}" target="_blank">${data.documentation_url}</a></p>
+            <h2>Statistics</h2>
+            <p>Artists: ${data.statistics.artists}</p>
+            <p>Labels: ${data.statistics.labels}</p>
+            <p>Releases: ${data.statistics.releases}</p>
+          `;
+
+          // Set the innerHTML of the data div to the content string
+          document.getElementById("data").innerHTML = content;
+        } catch (error) {
+          // Log any errors to the console
+          console.error("Fetch error: ", error);
+
+          // Display an error message to the user
+          document.getElementById(
+            "data"
+          ).innerHTML = `<p>Error: ${error.message}</p>`;
+        }
+      }
+
+      // Call the getData function when the page loads
+      getData();
+    </script>
+  </body>
+</html>

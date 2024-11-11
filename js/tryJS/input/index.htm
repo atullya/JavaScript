@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" name="display" />
+      <input type="button" value="7" onclick="display.value+='7'" />
+      <input type="button" value="8" onclick="display.value+='8'" />
+    </form>
+
+    <div id="show"></div>
+    <style>
+      #show {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        background-color: #f5f5f5;
+      }
+
+      /* Styling each chair */
+      .freechair {
+        position: absolute;
+        font-size: 40px;
+        color: black;
+        transform-origin: bottom center; /* Rotate around the bottom center */
+      }
+
+      /* Positioning the chairs in a curve */
+      #show .freechair:nth-child(1) {
+        left: 20px;
+        top: 100px;
+        transform: rotate(-30deg);
+      }
+
+      #show .freechair:nth-child(2) {
+        left: 60px;
+        top: 60px;
+        transform: rotate(-20deg);
+      }
+
+      #show .freechair:nth-child(3) {
+        left: 120px;
+        top: 40px;
+        transform: rotate(-10deg);
+      }
+
+      #show .freechair:nth-child(4) {
+        left: 180px;
+        top: 30px;
+        transform: rotate(0deg);
+      }
+
+      #show .freechair:nth-child(5) {
+        left: 240px;
+        top: 40px;
+        transform: rotate(10deg);
+      }
+
+      #show .freechair:nth-child(6) {
+        left: 300px;
+        top: 60px;
+        transform: rotate(20deg);
+      }
+
+      #show .freechair:nth-child(7) {
+        left: 340px;
+        top: 100px;
+        transform: rotate(30deg);
+      }
+      #show .freechair:nth-child(8) {
+        left: 380px;
+        top: 150px;
+        transform: rotate(40deg);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <button id="btn">Procced</button>
+    <script>
+      let show = document.getElementById("show");
+      // Loop to create the chair icons
+      for (let i = 0; i < 10; i++) {
+        show.innerHTML += `<i class="fa-solid fa-chair freechair" data-setvalue="click"></i>`;
+      }
+
+      // Selecting all elements with the class "freechair"
+      let freechairs = document.querySelectorAll(".freechair");
+      // Function to load booked chairs from local storage
+      function loadBookedChairs() {
+        const bookedChairs =
+          JSON.parse(localStorage.getItem("bookedChairs")) || [];
+        bookedChairs.forEach((index) => {
+          const chair = freechairs[index];
+          chair.style.color = "red";
+          chair.setAttribute("data-booked", "true");
+        });
+      }
+
+      // Function to save booked chairs to local storage
+      function saveBookedChairs(index) {
+        let bookedChairs =
+          JSON.parse(localStorage.getItem("bookedChairs")) || [];
+        bookedChairs.push(index);
+        localStorage.setItem("bookedChairs", JSON.stringify(bookedChairs));
+      }
+
+      // Load booked chairs when the page loads
+      loadBookedChairs();
+      let btn = document.getElementById("btn");
+      freechairs.forEach((chair, index) => {
+        chair.addEventListener("click", () => {
+          // Check if the chair is already booked
+          if (chair.getAttribute("data-booked") === "true") {
+            alert("This seat is already booked.");
+            return; // Exit the function if already booked
+          }
+
+          chair.style.color = "red";
+          // Ask the user for confirmation
+
+          // Check the result of the confirm dialog
+          btn.addEventListener("click", function () {
+            let userConfirmed = confirm("Do you want to book a seat?");
+            if (userConfirmed) {
+              alert("You have booked the seat!");
+
+              // Mark the chair as booked
+              chair.setAttribute("data-booked", "true");
+
+              // Save the booked chair in local storage
+              saveBookedChairs(index);
+            } else {
+              alert("You canceled the booking.");
+            }
+          });
+        });
+      });
+
+      // Example to demonstrate how to access data attributes
+      freechairs.forEach((chair) => {
+        console.log(chair.getAttribute("data-setvalue")); // Should print "click"
+      });
+    </script>
+  </body>
+</html>

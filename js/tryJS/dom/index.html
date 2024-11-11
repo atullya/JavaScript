@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input" placeholder="Type here" name="text" />
+    <button onclick="show()">Click</button>
+    <div id="res"></div>
+    <style>
+      .fail {
+        color: red;
+      }
+      .pass {
+        color: green;
+      }
+    </style>
+    <script>
+      function show() {
+        let res = document.getElementById("res");
+        let ins = parseInt(document.getElementById("input").value);
+
+        // Remove existing classes
+        res.classList.remove("fail", "pass");
+
+        if (ins > 20) {
+          res.classList.add("fail");
+          res.innerHTML = ins;
+        } else {
+          res.classList.add("pass");
+          res.innerHTML = ins;
+        }
+      }
+    </script>
+  </body>
+</html>

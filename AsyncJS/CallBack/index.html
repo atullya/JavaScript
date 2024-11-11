@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //callback=>connection btn function or calling function inide function
+
+      // for call back we passed arguement in function one()
+
+      function one(call_two) {
+        console.log("Step 1 completed. please call step 2");
+        call_two();
+      }
+      function two() {
+        console.log("Step 2");
+      }
+
+      //now everytime function function one runs function two automatically
+
+      //   one(two()); //if we do this the o/p will be step 2     and step 1 because we When you pass two() as an argument to one, you are immediately invoking the two function and passing its return value to one.
+
+      one(two); // if we do this the o/p will be step 1   and step 2 because When you pass two as an argument to one, you are passing the function two itself without calling it.
+      //   This means that two will not be executed immediately; instead, it will be passed as a reference to be called later inside the one function.
+    </script>
+  </body>
+</html>

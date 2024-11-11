@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="searchitem" placeholder="Search for users..." />
+    <!-- <select name="" id="selectitem"></select> -->
+    <p id="age"></p>
+    <img src="" alt="" id="getimg" />
+    <p id="show"></p>
+
+    <!-- <script>
+      let getData = async () => {
+        let response = await fetch("https://dummyjson.com/users");
+        let data = await response.json();
+        let alldata = data.users;
+        console.log(alldata);
+
+        let show = document.getElementById("show");
+        let content = "";
+        content = `<select id="selectitems">`;
+        alldata.forEach((element, index) => {
+          content += `<option data-userimg=${element.image}>${element.firstName} ${element.lastName}</option>`;
+        });
+        content += `</select>`;
+        show.innerHTML = content;
+
+        let selectitems = document.getElementById("selectitems");
+        let getimg = document.getElementById("getimg");
+        let ageDisplay = document.getElementById("age");
+
+        // Event listener for when the user selects a different option
+        selectitems.addEventListener("change", function () {
+          let selectedOption = selectitems.options[selectitems.selectedIndex];
+          let imgurl = selectedOption.value; // Get the image URL from the value
+          let age = selectedOption.getAttribute("data-age");
+          let dob = selectedOption.getAttribute("data-dob");
+
+          getimg.src = imgurl; // Set the image source
+          ageDisplay.innerHTML = `Age: ${age}, DOB: ${dob}`; // Display age and DOB
+        });
+
+        // selectitem.innerHTML = ""; // Clear the select element before adding new options
+        // let age = document.getElementById("age");
+        // age.innerHTML = ""; // Clear age display
+
+        // alldata.forEach((element) => {
+        //   let option = document.createElement("option");
+        //   option.value = element.age; // Set the age as the value of the option
+        //   option.textContent = element.firstName + " " + element.lastName; // Set the text of the option
+        //   selectitem.appendChild(option);
+        // });
+
+        // // Event listener to update the age when an option is selected
+        // selectitem.addEventListener("change", function () {
+        //   let selectedAge = selectitem.value; // Get the age from the selected option
+        //   age.textContent = `Age: ${selectedAge}`; // Display the age
+        // });
+      };
+
+      getData();
+    </script> -->
+    <script>
+      let searchitem = document.getElementById("searchitem");
+
+      let getData = async () => {
+        try {
+          let response = await fetch("https://dummyjson.com/users");
+          let data = await response.json();
+          let alldata = data.users;
+          console.log(alldata);
+
+          let show = document.getElementById("show");  
+
+          const updateDropdown = (filteredData) => {
+            let content = `<select id="selectitems">`;
+            filteredData.forEach((element) => {
+              content += `<option value="${element.image}" data-age="${element.age}" data-dob="${element.birthDate}">
+                  ${element.firstName} ${element.lastName} ${element.company.department}</option>`;
+            });
+            content += `</select>`;
+            show.innerHTML = content;
+
+            let selectitems = document.getElementById("selectitems");
+            let getimg = document.getElementById("getimg");
+            let ageDisplay = document.getElementById("age");
+            let dobDisplay = document.getElementById("dob");
+
+            // Event listener for when the user selects a different option
+            selectitems.addEventListener("change", function () {
+              let selectedOption =
+                selectitems.options[selectitems.selectedIndex];
+              let imgurl = selectedOption.value; // Get the image URL from the value
+              let age = selectedOption.getAttribute("data-age");
+              let dob = selectedOption.getAttribute("data-dob");
+
+              console.log("Image URL: ", imgurl); // Debugging line
+              console.log("Age: ", age); // Debugging line
+              console.log("DOB: ", dob); // Debugging line
+
+              getimg.src = imgurl ? imgurl : ""; // Set the image source
+              ageDisplay.innerHTML = `Age: ${age}`; // Display age
+              dobDisplay.innerHTML = `Date of Birth: ${dob}`; // Display DOB
+            });
+
+            // Trigger change event to show initial values
+            selectitems.dispatchEvent(new Event("change"));
+          };
+
+          // Initial display of all users
+          updateDropdown(alldata);
+
+          // Event listener for search input
+          searchitem.addEventListener("input", function () {
+            let searchValue = searchitem.value.toLowerCase();
+            let filteredData = alldata.filter((element) =>
+              `${element.firstName} ${element.lastName} ${element.company.department}`
+                .toLowerCase()
+                .includes(searchValue)
+            );
+
+            updateDropdown(filteredData);
+          });
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+      };
+
+      getData();
+    </script>
+  </body>
+</html>

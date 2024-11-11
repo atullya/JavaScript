@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the page -->
+    <title>Simple-Calculator</title>
+    <!-- Favicon link -->
+    <link rel="icon" href="./assets/Favicon.png" />
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Preconnect links for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Link to the Poppins font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Calculator layout -->
+    <div class="calculator">
+      <!-- Display input field -->
+      <input type="text" id="display" readonly />
+      <br />
+
+      S-Cal
+      <!-- Calculator buttons with specific IDs, various classes and data attributes -->
+      <button id="clearDisplay">C</button>
+      <button class="operator" data-value="/">&#247;</button>
+      <button class="operator" data-value="*">&times;</button>
+      <button id="backSpace">&larr;</button>
+      <button class="digit" data-value="7">7</button>
+      <button class="digit" data-value="8">8</button>
+      <button class="digit" data-value="9">9</button>
+      <button class="operator" data-value="-">-</button>
+      <button class="digit" data-value="4">4</button>
+      <button class="digit" data-value="5">5</button>
+      <button class="digit" data-value="6">6</button>
+      <button class="operator" data-value="+">+</button>
+      <button class="digit" data-value="1">1</button>
+      <button class="digit" data-value="2">2</button>
+      <button class="digit" data-value="3">3</button>
+      <button id="calculateResult">=</button>
+      <button id="percentage">%</button>
+      <button class="digit" data-value="0">0</button>
+      <button class="digit" data-value=".">.</button>
+    </div>
+    <!-- Script link for the JavaScript logic -->
+    <script src="script.js"></script>
+  </body>
+</html>

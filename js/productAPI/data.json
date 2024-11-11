@@ -1,0 +1,1190 @@
+[
+  {
+    "id": 2,
+    "title": "Stylish Men's Jacket",
+    "price": 59.99,
+    "description": "A stylish jacket perfect for the winter season.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 120
+    }
+  },
+  {
+    "id": 3,
+    "title": "Elegant Women's Dress",
+    "price": 89.99,
+    "description": "An elegant dress suitable for any occasion.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 210
+    }
+  },
+  {
+    "id": 4,
+    "title": "4K Ultra HD TV",
+    "price": 399.99,
+    "description": "Experience the best picture quality with our 4K Ultra HD TV.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 320
+    }
+  },
+  {
+    "id": 5,
+    "title": "Gold Necklace",
+    "price": 199.99,
+    "description": "A beautiful gold necklace that adds elegance to your outfit.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 95
+    }
+  },
+  {
+    "id": 6,
+    "title": "Organic Almonds",
+    "price": 15.99,
+    "description": "High-quality organic almonds packed with nutrients.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 180
+    }
+  },
+  {
+    "id": 7,
+    "title": "Men's Leather Shoes",
+    "price": 75.99,
+    "description": "Comfortable and stylish leather shoes for men.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 145
+    }
+  },
+  {
+    "id": 8,
+    "title": "Women's Handbag",
+    "price": 59.99,
+    "description": "A fashionable handbag that complements any outfit.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 230
+    }
+  },
+  {
+    "id": 9,
+    "title": "Bluetooth Headphones",
+    "price": 49.99,
+    "description": "Wireless Bluetooth headphones with superior sound quality.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 315
+    }
+  },
+  {
+    "id": 10,
+    "title": "Silver Bracelet",
+    "price": 29.99,
+    "description": "A sleek and stylish silver bracelet.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 105
+    }
+  },
+  {
+    "id": 11,
+    "title": "Organic Quinoa",
+    "price": 10.99,
+    "description": "Healthy and organic quinoa for your meals.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 200
+    }
+  },
+  {
+    "id": 12,
+    "title": "Casual Men's T-Shirt",
+    "price": 19.99,
+    "description": "Comfortable and stylish T-shirt for casual wear.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.0,
+      "count": 170
+    }
+  },
+  {
+    "id": 13,
+    "title": "Women's Sunglasses",
+    "price": 29.99,
+    "description": "Trendy sunglasses to protect your eyes and enhance your look.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 240
+    }
+  },
+  {
+    "id": 14,
+    "title": "Smartphone",
+    "price": 299.99,
+    "description": "Latest smartphone with advanced features.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 400
+    }
+  },
+  {
+    "id": 15,
+    "title": "Pearl Earrings",
+    "price": 49.99,
+    "description": "Elegant pearl earrings for special occasions.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 120
+    }
+  },
+  {
+    "id": 16,
+    "title": "Organic Honey",
+    "price": 12.99,
+    "description": "Pure organic honey with natural sweetness.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 190
+    }
+  },
+  {
+    "id": 17,
+    "title": "Men's Casual Sneakers",
+    "price": 39.99,
+    "description": "Comfortable sneakers for everyday wear.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 160
+    }
+  },
+  {
+    "id": 18,
+    "title": "Women's Scarf",
+    "price": 19.99,
+    "description": "A fashionable scarf to complement your outfit.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 220
+    }
+  },
+  {
+    "id": 19,
+    "title": "Laptop",
+    "price": 599.99,
+    "description": "High-performance laptop for work and entertainment.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 380
+    }
+  },
+  {
+    "id": 20,
+    "title": "Diamond Ring",
+    "price": 999.99,
+    "description": "A beautiful diamond ring to celebrate special moments.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.9,
+      "count": 85
+    }
+  },
+  {
+    "id": 21,
+    "title": "Organic Olive Oil",
+    "price": 14.99,
+    "description": "Premium quality organic olive oil for cooking.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 150
+    }
+  },
+  {
+    "id": 22,
+    "title": "Men's Watch",
+    "price": 129.99,
+    "description": "A stylish and functional men's watch.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 200
+    }
+  },
+  {
+    "id": 23,
+    "title": "Women's Leather Jacket",
+    "price": 99.99,
+    "description": "A high-quality leather jacket for women.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 180
+    }
+  },
+  {
+    "id": 24,
+    "title": "Smart Home Speaker",
+    "price": 79.99,
+    "description": "A smart speaker with voice control and great sound quality.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 250
+    }
+  },
+  {
+    "id": 25,
+    "title": "Gold Earrings",
+    "price": 149.99,
+    "description": "Elegant gold earrings for any occasion.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 130
+    }
+  },
+  {
+    "id": 26,
+    "title": "Organic Almond Milk",
+    "price": 4.99,
+    "description": "Healthy and organic almond milk for a nutritious diet.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 175
+    }
+  },
+  {
+    "id": 27,
+    "title": "Men's Sports Shoes",
+    "price": 49.99,
+    "description": "Durable and comfortable sports shoes for men.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 160
+    }
+  },
+  {
+    "id": 28,
+    "title": "Women's Bracelet",
+    "price": 29.99,
+    "description": "A fashionable bracelet to complement any outfit.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 210
+    }
+  },
+  {
+    "id": 29,
+    "title": "Wireless Earbuds",
+    "price": 39.99,
+    "description": "Compact wireless earbuds with excellent sound quality.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 290
+    }
+  },
+  {
+    "id": 30,
+    "title": "Silver Necklace",
+    "price": 34.99,
+    "description": "A sleek silver necklace for a touch of elegance.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 110
+    }
+  },
+  {
+    "id": 31,
+    "title": "Organic Brown Rice",
+    "price": 8.99,
+    "description": "Nutritious and organic brown rice for healthy meals.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 170
+    }
+  },
+  {
+    "id": 32,
+    "title": "Men's Formal Shirt",
+    "price": 24.99,
+    "description": "A classic formal shirt for men's business attire.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 140
+    }
+  },
+  {
+    "id": 33,
+    "title": "Women's Ankle Boots",
+    "price": 69.99,
+    "description": "Stylish ankle boots for women, perfect for fall.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 190
+    }
+  },
+  {
+    "id": 34,
+    "title": "Gaming Console",
+    "price": 499.99,
+    "description": "The latest gaming console with advanced features.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 270
+    }
+  },
+  {
+    "id": 35,
+    "title": "Diamond Necklace",
+    "price": 749.99,
+    "description": "A luxurious diamond necklace for special occasions.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.9,
+      "count": 85
+    }
+  },
+  {
+    "id": 36,
+    "title": "Organic Coconut Oil",
+    "price": 9.99,
+    "description": "Pure organic coconut oil for cooking and skincare.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 160
+    }
+  },
+  {
+    "id": 37,
+    "title": "Men's Winter Coat",
+    "price": 119.99,
+    "description": "A warm and stylish winter coat for men.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 130
+    }
+  },
+  {
+    "id": 38,
+    "title": "Women's Tote Bag",
+    "price": 49.99,
+    "description": "A spacious and stylish tote bag for women.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 200
+    }
+  },
+  {
+    "id": 39,
+    "title": "4K Action Camera",
+    "price": 149.99,
+    "description": "Capture your adventures with this 4K action camera.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 250
+    }
+  },
+  {
+    "id": 40,
+    "title": "Ruby Ring",
+    "price": 599.99,
+    "description": "A beautiful ruby ring for special occasions.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.9,
+      "count": 70
+    }
+  },
+  {
+    "id": 41,
+    "title": "Organic Black Beans",
+    "price": 5.99,
+    "description": "Nutritious organic black beans for healthy meals.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 140
+    }
+  },
+  {
+    "id": 42,
+    "title": "Men's Hoodie",
+    "price": 34.99,
+    "description": "A comfortable and stylish hoodie for men.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 110
+    }
+  },
+  {
+    "id": 43,
+    "title": "Women's Denim Jacket",
+    "price": 69.99,
+    "description": "A fashionable denim jacket for women.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 150
+    }
+  },
+  {
+    "id": 44,
+    "title": "Wireless Mouse",
+    "price": 29.99,
+    "description": "A high-precision wireless mouse for your computer.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 180
+    }
+  },
+  {
+    "id": 45,
+    "title": "Silver Pendant",
+    "price": 39.99,
+    "description": "A beautiful silver pendant for a touch of elegance.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 95
+    }
+  },
+  {
+    "id": 46,
+    "title": "Organic Peanut Butter",
+    "price": 6.99,
+    "description": "Delicious and healthy organic peanut butter.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 190
+    }
+  },
+  {
+    "id": 47,
+    "title": "Men's Beanie",
+    "price": 14.99,
+    "description": "A warm and stylish beanie for men.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 75
+    }
+  },
+  {
+    "id": 48,
+    "title": "Women's Wallet",
+    "price": 24.99,
+    "description": "A stylish and practical wallet for women.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 130
+    }
+  },
+  {
+    "id": 49,
+    "title": "Bluetooth Speaker",
+    "price": 49.99,
+    "description": "Portable Bluetooth speaker with excellent sound quality.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 220
+    }
+  },
+  {
+    "id": 50,
+    "title": "Gold Bracelet",
+    "price": 99.99,
+    "description": "A stylish gold bracelet for a touch of luxury.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 110
+    }
+  },
+  {
+    "id": 51,
+    "title": "Organic Green Tea",
+    "price": 7.99,
+    "description": "Refreshing and healthy organic green tea.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 160
+    }
+  },
+  {
+    "id": 52,
+    "title": "Men's Polo Shirt",
+    "price": 29.99,
+    "description": "A classic and comfortable polo shirt for men.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 100
+    }
+  },
+  {
+    "id": 53,
+    "title": "Women's Leather Boots",
+    "price": 89.99,
+    "description": "High-quality leather boots for women.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 140
+    }
+  },
+  {
+    "id": 54,
+    "title": "Smart Watch",
+    "price": 199.99,
+    "description": "A smart watch with multiple health tracking features.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 250
+    }
+  },
+  {
+    "id": 55,
+    "title": "Emerald Earrings",
+    "price": 149.99,
+    "description": "Elegant emerald earrings for special occasions.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.9,
+      "count": 85
+    }
+  },
+  {
+    "id": 56,
+    "title": "Organic Chia Seeds",
+    "price": 5.99,
+    "description": "Nutritious organic chia seeds for a healthy diet.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 150
+    }
+  },
+  {
+    "id": 57,
+    "title": "Men's Trench Coat",
+    "price": 139.99,
+    "description": "A classic and stylish trench coat for men.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 120
+    }
+  },
+  {
+    "id": 58,
+    "title": "Women's Crossbody Bag",
+    "price": 39.99,
+    "description": "A trendy crossbody bag for women.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 180
+    }
+  },
+  {
+    "id": 59,
+    "title": "Noise Cancelling Headphones",
+    "price": 99.99,
+    "description": "Noise cancelling headphones with superior sound quality.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 230
+    }
+  },
+  {
+    "id": 60,
+    "title": "Sapphire Necklace",
+    "price": 199.99,
+    "description": "A stunning sapphire necklace for a touch of elegance.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 90
+    }
+  },
+  {
+    "id": 61,
+    "title": "Organic Quinoa",
+    "price": 6.99,
+    "description": "Nutritious organic quinoa for healthy meals.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 160
+    }
+  },
+  {
+    "id": 62,
+    "title": "Men's Dress Shoes",
+    "price": 79.99,
+    "description": "Elegant and comfortable dress shoes for men.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 130
+    }
+  },
+  {
+    "id": 63,
+    "title": "Women's Sunglasses",
+    "price": 29.99,
+    "description": "Stylish sunglasses for women.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 170
+    }
+  },
+  {
+    "id": 64,
+    "title": "Portable Charger",
+    "price": 19.99,
+    "description": "A compact and efficient portable charger for your devices.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 210
+    }
+  },
+  {
+    "id": 65,
+    "title": "Gold Necklace",
+    "price": 119.99,
+    "description": "A beautiful gold necklace for special occasions.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 100
+    }
+  },
+  {
+    "id": 66,
+    "title": "Organic Oatmeal",
+    "price": 4.99,
+    "description": "Healthy and nutritious organic oatmeal.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 150
+    }
+  },
+  {
+    "id": 67,
+    "title": "Men's T-Shirt",
+    "price": 19.99,
+    "description": "A comfortable and stylish t-shirt for men.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 140
+    }
+  },
+  {
+    "id": 68,
+    "title": "Women's Scarf",
+    "price": 14.99,
+    "description": "A fashionable scarf for women.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 110
+    }
+  },
+  {
+    "id": 69,
+    "title": "Bluetooth Headset",
+    "price": 39.99,
+    "description": "A high-quality Bluetooth headset for hands-free use.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 200
+    }
+  },
+  {
+    "id": 70,
+    "title": "Pearl Earrings",
+    "price": 129.99,
+    "description": "Elegant pearl earrings for a sophisticated look.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 90
+    }
+  },
+  {
+    "id": 71,
+    "title": "Organic Honey",
+    "price": 12.99,
+    "description": "Pure organic honey for natural sweetness.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 180
+    }
+  },
+  {
+    "id": 72,
+    "title": "Men's Jeans",
+    "price": 49.99,
+    "description": "Comfortable and stylish jeans for men.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 120
+    }
+  },
+  {
+    "id": 73,
+    "title": "Women's Blouse",
+    "price": 29.99,
+    "description": "A chic and stylish blouse for women.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 130
+    }
+  },
+  {
+    "id": 74,
+    "title": "Smartphone",
+    "price": 699.99,
+    "description": "A latest model smartphone with advanced features.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 250
+    }
+  },
+  {
+    "id": 75,
+    "title": "Gold Ring",
+    "price": 199.99,
+    "description": "A stunning gold ring for special moments.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.9,
+      "count": 80
+    }
+  },
+  {
+    "id": 76,
+    "title": "Organic Almonds",
+    "price": 9.99,
+    "description": "Healthy and nutritious organic almonds.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 150
+    }
+  },
+  {
+    "id": 77,
+    "title": "Men's Jacket",
+    "price": 69.99,
+    "description": "A stylish and warm jacket for men.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 110
+    }
+  },
+  {
+    "id": 78,
+    "title": "Women's Handbag",
+    "price": 59.99,
+    "description": "A fashionable handbag for women.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 170
+    }
+  },
+  {
+    "id": 79,
+    "title": "Wireless Keyboard",
+    "price": 49.99,
+    "description": "A high-quality wireless keyboard for your computer.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 220
+    }
+  },
+  {
+    "id": 80,
+    "title": "Diamond Ring",
+    "price": 499.99,
+    "description": "A beautiful diamond ring for special occasions.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.9,
+      "count": 75
+    }
+  },
+  {
+    "id": 81,
+    "title": "Organic Coffee Beans",
+    "price": 15.99,
+    "description": "Rich and aromatic organic coffee beans.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 180
+    }
+  },
+  {
+    "id": 82,
+    "title": "Men's Leather Belt",
+    "price": 24.99,
+    "description": "A stylish and durable leather belt for men.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 90
+    }
+  },
+  {
+    "id": 83,
+    "title": "Women's Earrings",
+    "price": 39.99,
+    "description": "Elegant and fashionable earrings for women.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 150
+    }
+  },
+  {
+    "id": 84,
+    "title": "USB-C Cable",
+    "price": 9.99,
+    "description": "A durable and fast-charging USB-C cable.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 190
+    }
+  },
+  {
+    "id": 85,
+    "title": "Gold Earrings",
+    "price": 89.99,
+    "description": "Elegant gold earrings for a stylish look.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 120
+    }
+  },
+  {
+    "id": 86,
+    "title": "Organic Brown Rice",
+    "price": 7.99,
+    "description": "Healthy and nutritious organic brown rice.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 160
+    }
+  },
+  {
+    "id": 87,
+    "title": "Men's Sneakers",
+    "price": 59.99,
+    "description": "Comfortable and stylish sneakers for men.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 110
+    }
+  },
+  {
+    "id": 88,
+    "title": "Women's Necklace",
+    "price": 49.99,
+    "description": "A beautiful necklace for women.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 130
+    }
+  },
+  {
+    "id": 89,
+    "title": "Laptop Stand",
+    "price": 29.99,
+    "description": "A sturdy and adjustable laptop stand.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 200
+    }
+  },
+  {
+    "id": 90,
+    "title": "Pearl Necklace",
+    "price": 149.99,
+    "description": "An elegant pearl necklace for special occasions.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.9,
+      "count": 95
+    }
+  },
+  {
+    "id": 91,
+    "title": "Organic Cashews",
+    "price": 12.99,
+    "description": "Healthy and nutritious organic cashews.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 140
+    }
+  },
+  {
+    "id": 92,
+    "title": "Men's Wallet",
+    "price": 24.99,
+    "description": "A stylish and practical wallet for men.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 80
+    }
+  },
+  {
+    "id": 93,
+    "title": "Women's Bracelet",
+    "price": 39.99,
+    "description": "A fashionable bracelet for women.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 110
+    }
+  },
+  {
+    "id": 94,
+    "title": "Bluetooth Earbuds",
+    "price": 29.99,
+    "description": "Wireless Bluetooth earbuds with excellent sound quality.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 210
+    }
+  },
+  {
+    "id": 95,
+    "title": "Gold Pendant",
+    "price": 99.99,
+    "description": "A stylish gold pendant for a touch of elegance.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 80
+    }
+  },
+  {
+    "id": 96,
+    "title": "Organic Coconut Oil",
+    "price": 8.99,
+    "description": "Pure organic coconut oil for cooking and skincare.",
+    "category": "groceries",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 160
+    }
+  },
+  {
+    "id": 97,
+    "title": "Men's Sunglasses",
+    "price": 29.99,
+    "description": "Stylish sunglasses for men.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 90
+    }
+  },
+  {
+    "id": 98,
+    "title": "Women's Hat",
+    "price": 19.99,
+    "description": "A fashionable hat for women.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 100
+    }
+  },
+  {
+    "id": 99,
+    "title": "Smart Home Device",
+    "price": 99.99,
+    "description": "A smart home device to automate your home.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 230
+    }
+  },
+  {
+    "id": 100,
+    "title": "Silver Bracelet",
+    "price": 49.99,
+    "description": "A beautiful silver bracelet for everyday wear.",
+    "category": "jewelry",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 100
+    }
+  }
+]

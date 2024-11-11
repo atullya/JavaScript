@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" placeholder="search" id="search" />
+    <button onclick="getData()">Click Here</button>
+    <div id="content"></div>
+    <script>
+      let getData = async () => {
+        let response = await fetch(
+          "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=xboiiYvlZbvOXnErh4uYXL7Lfj1diIuWR1buSvIN"
+        );
+        let data = await response.json();
+        console.log(data);
+
+        let content = `
+                <p>Date: ${data.date}</p>
+                <p>Title: ${data.title}</p>
+                <img src="${data.url}" alt="${data.title}" height="250px" width="250px">
+                <p>Explanation: ${data.explanation}</p>
+              `;
+
+        document.getElementById("content").innerHTML = content;
+      };
+    </script>
+  </body>
+</html>

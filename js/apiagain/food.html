@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="food"></div>
+
+    <script>
+      let url =
+        "https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata";
+
+      async function getFood() {
+        try {
+          let response = await fetch(url);
+          let data = await response.json();
+          console.log(data);
+          let allData = data.meals;
+          let content = "";
+
+          allData.forEach((element) => {
+            content += `
+            <div>
+              <p> Meal Name: <b>${element.strMeal}</b></p>
+              <p> Meal ID: ${element.idMeal}</p>
+              <p> Area: ${element.strArea}</p>
+              <p> Category: ${element.strCategory}</p>
+              <h2>Instructions</h2>
+              <p>${element.strInstructions}</p>
+              <p>For Tutorial! <a href="${
+                element.strYoutube
+              }" target="_blank">Watch Here</a></p>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/${getYoutubeId(
+                  element.strYoutube
+                )}"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          `;
+          });
+
+          document.getElementById("food").innerHTML = content;
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+      }
+
+      // Function to extract YouTube video ID from URL
+      function getYoutubeId(url) {
+        let videoId = url.split("v=")[1];
+        let ampersandPosition = videoId.indexOf("&");
+        if (ampersandPosition != -1) {
+          videoId = videoId.substring(0, ampersandPosition);
+        }
+        return videoId;
+      }
+
+      getFood();
+    </script>
+  </body>
+</html>

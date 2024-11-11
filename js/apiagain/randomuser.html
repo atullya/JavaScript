@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="show"></div>
+    <script>
+      async function getData() {
+        try {
+          let response = await fetch("user.json");
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+
+          let data = await response.json();
+          console.log(data);
+
+          data.forEach((element, index) => {
+            // Create a container div for each user
+            let userContainer = document.createElement("div");
+
+            // Create and set up the name element
+            let userName = document.createElement("p");
+            userName.innerHTML = `Name: ${element.name}`;
+            userName.setAttribute("data-phone", element.phone); // Store the phone number
+
+            // Create and set up other user info elements
+            let userEmail = document.createElement("p");
+            userEmail.innerHTML = `Email: ${element.email}`;
+            let userAddress = document.createElement("p"); 
+            userAddress.innerHTML = `Address: ${element.address}`;
+
+            // Create the phone number element (initially hidden)
+            let userPhone = document.createElement("p");
+            userPhone.innerHTML = `Phone: ${element.phone}`;
+            userPhone.style.display = "none"; // Hide phone number initially
+
+            // Add a click event listener to the name element
+            userName.addEventListener("click", function () {
+              userPhone.style.display =
+                userPhone.style.display === "none" ? "block" : "none"; // Toggle phone number visibility
+            });
+
+            // Append elements to the user container
+            userContainer.appendChild(userName);
+            userContainer.appendChild(userEmail);
+            userContainer.appendChild(userAddress);
+            userContainer.appendChild(userPhone);
+            userContainer.appendChild(document.createElement("hr")); // Separator
+
+            // Append the user container to the show div
+            document.getElementById("show").appendChild(userContainer);
+          });
+        } catch (error) {
+          console.error("Error fetching data:", error);
+          document.getElementById("show").innerText = "Failed to load data.";
+        }
+      }
+
+      getData();
+    </script>
+  </body>
+</html>

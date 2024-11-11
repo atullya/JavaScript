@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div id="ajax-msg"></div>
+    <script>
+      $(document).ready(function () {
+        getData();
+      });
+      function getData() {
+        $.ajax({
+          url: "sample. html",
+          type: "GET",
+          dataType: "text",
+          success: successfn,
+          error: errorfn,
+          complete: function (xhr, status) {
+            console.log("The request is completed!");
+          },
+        });
+      }
+      function successfn(result) {
+        console.log("Success");
+        $("#ajax-msg").append(result);
+      }
+      function errorfn(xhr, status, errormsg) {
+        console.log(xhr);
+        console.log(status);
+        console.log(errormsg);
+      }
+    </script>
+  </body>
+</html>

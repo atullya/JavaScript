@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Enter a Number:
+    <input type="text" placeholder="please enter 1 number" id="number" />
+    <p id="show"></p>
+    <button onclick="storeNumber()">Store in Array</button>
+    <button onclick="bubblesort()">Sort Number</button>
+    <script>
+      //   let num = parseInt(number);
+
+      let arr = [];
+      let c = 0;
+      function storeNumber() {
+        let number = document.getElementById("number").value;
+        arr.push(number);
+        c++;
+        if (c < 5) {
+          document.getElementById("number").placeholder = `please enter ${
+            c + 1
+          } number`;
+        }
+        document.getElementById("number").value = "";
+        if (c === 5) {
+          document.getElementById("show").innerHTML = arr;
+        }
+      }
+      function bubblesort() {
+        if (c < 5) {
+          alert("Please enter 5 numbers before sorting!");
+          return;
+        }
+        for (let i = 0; i < arr.length - 1; i++) {
+          for (let j = 0; j < arr.length - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+              let temp = arr[j];
+              arr[j] = arr[j + 1];
+              arr[j + 1] = temp;
+            }
+          }
+        }
+
+        document.getElementById("show").innerHTML =
+          "Sorted Numbers: " + arr.join(", ");
+      }
+    </script>
+  </body>
+</html>

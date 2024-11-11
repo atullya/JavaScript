@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const url =
+        "https://twitter154.p.rapidapi.com/search/search/continuation?query=%23python&section=top&min_retweets=20&limit=5&continuation_token=DAACCgACF_Sz76EAJxAKAAMX9LPvoP_Y8AgABAAAAAILAAUAAABQRW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUFVWDlJWmx4cHZBZkJmMG5RNUxHdUVQRi9TdTZPSGJzQ0VYOUp6Y3psdUJ3UmYwbFE3Q1dxQWsIAAYAAAAACAAHAAAAAAwACAoAARf0hmXGm8B8AAAA&min_likes=20&start_date=2022-01-01&language=en";
+
+      const options = {
+        method: "GET",
+        headers: {
+          "x-rapidapi-key":
+            "ec7530f3f8msh9a9a5f030aa8fefp12b2f4jsn08fed577c4b8",
+          "x-rapidapi-host": "twitter154.p.rapidapi.com",
+        },
+      };
+
+      fetch(url, options)
+        .then((response) => response.text())
+        .then((result) => console.log(result))
+        .catch((error) => console.error("Error:", error));
+    </script>
+  </body>
+</html>

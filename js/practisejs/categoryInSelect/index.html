@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script>
+      let categories = [
+        "apple",
+        "ball",
+        "cat",
+        "cat",
+        "apple",
+        "apple",
+        "ball",
+        "ball",
+        "cat",
+        "ball",
+        "apple",
+        "ball",
+        "apple",
+      ];
+      let uniqueCategories = [...new Set(categories)]; // Get unique values
+      console.log(uniqueCategories);
+      let content = `
+        <select name="" id="selects">
+          <option value="">Please Choose</option>
+      `;
+      
+
+      for (let i = 0; i < uniqueCategories.length; i++) {
+        content += `
+          <option value="${uniqueCategories[i]}">${uniqueCategories[i]}</option>
+        `;
+      }
+
+      content += `</select>`;
+
+      document.querySelector(".container").innerHTML = content;
+    </script>
+  </body>
+</html>

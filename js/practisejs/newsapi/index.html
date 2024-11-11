@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="show"></div>
+    <script>
+      let getdata = async () => {
+        let response = await fetch(
+          "https://newsapi.org/v2/everything?q=tesla&from=2024-07-22&sortBy=publishedAt&apiKey=1cd4d0bcd00f4a3a8928a37ebe2a1a99"
+        );
+        let data = await response.json();
+        console.log(data);
+        let show = document.getElementById("show");
+        let content = "";
+        let i = 0;
+        data.articles.forEach((element) => {
+          i++;
+          content += `${i}  ${element.author}<br>
+              <img src="${element.urlToImage}">
+          `;
+        });
+        show.innerHTML = content;
+      };
+      getdata();
+    </script>
+  </body>
+</html>

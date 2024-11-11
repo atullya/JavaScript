@@ -1,0 +1,9 @@
+ // let si = document.getElementById("course").selectedIndex;
+        // console.log(si);
+        // let verifyselectedindex =
+        //   document.getElementById("course").option[si].text;
+        // if (verifyselectedindex == "Choose your branch") {
+        //   alert("You have to select on stream");
+        // } else {
+        //   alert("Your choosed " + verifyselectedindex);
+        // }

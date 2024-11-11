@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary API Demo</title>
+  </head>
+  <body>
+    <h1>Dictionary API Demo</h1>
+    <input type="text" id="show" placeholder="Search" />
+    <button onclick="getData()">Search Word</button>
+    <div id="weatherData"></div>
+
+    <script>
+      async function getData() {
+        try {
+          let val = document.getElementById("show").value;
+          let response = await fetch(
+            `https://api.dictionaryapi.dev/api/v2/entries/en/${val}`
+          );
+          let data = await response.json();
+          console.log(data);
+
+          if (data.length === 0) {
+            throw new Error("No Data Found!");
+          }
+
+          let allData = "";
+          data.forEach((element) => {
+            allData += `
+            <p>Word: ${element.word}</p>
+            <p>Meaning: ${element.meanings[0].definitions[0].definition}</p>
+            <p>Synonyms: ${element.meanings[0].definitions[0].synonyms.join(
+              ", "
+            )}</p>
+            <br>
+          `;
+          });
+
+          document.getElementById("weatherData").innerHTML = allData;
+        } catch (error) {
+          console.error(error);
+          document.getElementById(
+            "weatherData"
+          ).innerHTML = `<p>Error: ${error.message}</p>`;
+        }
+      }
+    </script>
+  </body>
+</html>

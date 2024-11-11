@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //synchronous
+      //   console.log("I");
+      //   console.log("eat");
+      //   console.log("Ice-Cream");
+      //   console.log("with a");
+      //   console.log("spoon");
+
+      //asynchronous
+
+      console.log("I");
+      console.log("eat");
+
+      //we use setTimeOut which allow us to run function after some time
+
+      setTimeout(() => {
+        console.log("Ice-Cream");
+      }, 1000);
+
+      console.log("with a");
+      console.log("spoon");
+    </script>
+  </body>
+</html>

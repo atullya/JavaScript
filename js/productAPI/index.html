@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <style>
+      .catego .CategoryList {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        width: 120px;
+        margin-top: 20px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+      }
+    </style>
+    <div class="container">
+      <div class="catego">
+        <h2>Select By Category</h2>
+        <div class="CategoryList"></div>
+        <h2>Cart</h2>
+        <div id="cart-container"></div>
+        <div id="cart-total"></div>
+      </div>
+      <div class="product">
+        <h1>Product List</h1>
+        <div class="row" id="product-container"></div>
+      </div>
+    </div>
+
+    <script>
+      let allData = [];
+      let allCat = [];
+      let cart = [];
+
+      async function getData() {
+        try {
+          let response = await fetch("https://dummyjson.com/products");
+          if (!response.ok) {
+            throw new Error("Failed to fetch products");
+          }
+          let data = await response.json();
+          console.log(data);
+          allData = data.products; // Assuming 'products' is the correct property name
+
+          const categoryDiv = document.querySelector(".CategoryList");
+          categoryDiv.innerHTML = "";
+
+          // Displaying category data
+          allData.forEach((element) => {
+            if (!allCat.includes(element.category)) {
+              categoryDiv.innerHTML += `<label>
+          <input type="checkbox" onclick='categoryFilter()' value="${element.category}"/>           ${element.category}<br>
+          </label>`;
+              allCat.push(element.category);
+            }
+          });
+
+          // Display all products initially
+          displayProducts(allData);
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+      }
+
+      function displayProducts(products) {
+        const productContainer = document.getElementById("product-container");
+        productContainer.innerHTML = "";
+
+        products.forEach((element) => {
+          productContainer.innerHTML += `
+             <div class="col-md-4 mb-3">
+               <div class="card" style="width: 18rem; box-shadow: 10px 10px 15px grey;">
+                 <img src="${
+                   element.images[0]
+                 }" class="card-img-top" alt="Product Image" style="height: 250px; width: 250px; object-fit: cover;">
+                 <div class="card-body">
+                   <h5 class="card-title">${element.title}</h5>
+                   <h5 class="card-title">${element.category}</h5>
+                 <p class="card-text">${limitDescription(
+                   element.description,
+                   15
+                 )}</p>
+                   <p class="card-text">$${element.price}</p>
+                   <button class="btn btn-primary" data-item='${JSON.stringify(
+                     element
+                   )}' onclick='addToCart(this)'>Add To Cart</button>
+                 </div>
+               </div>
+             </div>
+          `;
+        });
+      }
+
+      function limitDescription(description, limit) {
+        const words = description.split(" ");
+        if (words.length > limit) {
+          return words.slice(0, limit).join(" ") + "...";
+        }
+        return description;
+      }
+
+      function categoryFilter() {
+        let checkInput = document.querySelectorAll("input[type='checkbox']");
+        let checkData = [];
+        checkInput.forEach((e) => {
+          if (e.checked) {
+            checkData.push(e.value);
+          }
+        });
+
+        if (checkData.length === 0) {
+          displayProducts(allData);
+        } else {
+          const filteredProducts = allData.filter((product) =>
+            checkData.includes(product.category)
+          );
+          displayProducts(filteredProducts);
+        }
+        console.log(checkData);
+      }
+
+      function addToCart(button) {
+        const item = JSON.parse(button.getAttribute("data-item"));
+        cart.push(item);
+        displayCart();
+      }
+
+      function displayCart() {
+        const cartContainer = document.getElementById("cart-container");
+        const cartTotal = document.getElementById("cart-total");
+        cartContainer.innerHTML = "";
+
+        let total = 0;
+        cart.forEach((item, index) => {
+          cartContainer.innerHTML += `
+            <div class="cart-item">
+              <img src="${item.images[0]}" class="card-img-top" alt="Product Image" style="height: 250px; width: 250px; object-fit: cover;">
+              <p>${item.title} - $${item.price}</p>
+              <button class="btn btn-danger btn-sm" onclick='removeFromCart(${index})'>Remove</button>
+            </div>
+          `;
+          total += item.price;
+        });
+
+        cartTotal.innerHTML = `<h3>Total: $${total.toFixed(2)}</h3>`;
+      }
+
+      function removeFromCart(index) {
+        cart.splice(index, 1);
+        displayCart();
+      }
+
+      // Initial data fetch
+      getData();
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDzwrnQq4xF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

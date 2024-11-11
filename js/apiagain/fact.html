@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <!-- Images and IDs will be dynamically added here -->
+    </div>
+    <style>
+      #container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+    </style>
+    <p id="show"></p>
+    <script>
+      async function getData() {
+        try {
+          let response = await fetch(
+            "https://api.thecatapi.com/v1/images/search?limit=10"
+          );
+          console.log(response);
+          if (!response.ok) {
+            throw new Error("Failed Response!");
+          }
+          let data = await response.json();
+          console.log(data);
+
+          // Get the container element
+          let container = document.getElementById("container");
+          container.innerHTML = ""; // Clear previous content
+
+          // Iterate over the data and create HTML elements for each image
+          data.forEach((element) => {
+            let catId = document.createElement("h1");
+            catId.innerText = `ID: ${element.id}`;
+
+            let catImg = document.createElement("img");
+            catImg.src = element.url;
+            catImg.width = 400;
+            catImg.height = 400;
+
+            // Append the created elements to the container
+            container.appendChild(catId);
+            container.appendChild(catImg);
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      }
+
+      getData();
+    </script>
+  </body>
+</html>

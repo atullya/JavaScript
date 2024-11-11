@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="searchvalue" type="text" />search <br />
+    <p id="show"></p>
+    <button onclick="set()">click</button>
+    <button onclick="get()">show</button>
+    <script>
+      let arr = [
+        "apple",
+        "ball",
+        "cat",
+        "apple",
+        "chess",
+        "ball",
+        "hello",
+        "world",
+        "jug",
+        "ball",
+        "cat",
+        "chess",
+        "copy",
+      ];
+
+      let obj = {
+        name: "atullya",
+        roll: "5",
+        marks: "234",
+        city: "delhi",
+        country: "india",
+        name: "atullya",
+        roll: "5",
+        marks: "234",
+      };
+
+      let sett = {
+        arrya: arr,
+        obje: obj,
+      };
+
+      function set() {
+        // Convert the 'sett' object to a JSON string before storing it in localStorage
+        localStorage.setItem("details", JSON.stringify(sett));
+      }
+      let show = document.getElementById("show");
+
+      function get() {
+        // Retrieve the 'details' from localStorage and parse it back into an object
+        let storedData = localStorage.getItem("details");
+        if (storedData) {
+          let parsedData = JSON.parse(storedData);
+          let objectDetails = `
+      Name: ${parsedData.obje.name}<br>
+      Roll: ${parsedData.obje.roll}<br>
+      Marks: ${parsedData.obje.marks}<br>
+      City: ${parsedData.obje.city}<br>
+      Country: ${parsedData.obje.country}
+    `;
+
+          show.innerHTML = objectDetails;
+        } else {
+          console.log("No data found in localStorage");
+        }
+      }
+      //   let newdata = [...new Set(arr)];
+      //   console.log(newdata);
+      //   let getdata = newdata.map((element, index) => {
+      //     return element + index;
+      //   });
+      //   let show = document.getElementById("show");
+      //   show.innerHTML = getdata.join("");
+
+      //   let searchvalue = document.getElementById("searchvalue");
+      //   searchvalue.addEventListener("keyup", function (event) {
+      //     if (event.key == "a") {
+      //       alert("Enter search");
+      //     }
+      //     let show = document.getElementById("show");
+      //     show.innerHTML = searchvalue.value;
+      //   });
+    </script>
+  </body>
+</html>

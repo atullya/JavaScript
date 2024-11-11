@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" placeholder="Enter Your Tasks:" id="task" />
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+    <script>
+      function addTask() {
+        // Create new list item element
+        let checkbox = document.createElement("input");
+        let li = document.createElement("li");
+
+        // Create new checkbox element
+        checkbox.setAttribute("type", "checkbox");
+
+        // Get task input value
+        let taskInput = document.getElementById("task");
+        let task = taskInput.value;
+
+        // Append checkbox to list item
+        li.appendChild(checkbox);
+
+        // Create a text node for the task and append it to the list item
+        let taskText = document.createTextNode(task);
+        li.appendChild(taskText);
+
+        // Append list item to the task list
+        document.getElementById("taskList").appendChild(li);
+
+        checkbox.addEventListener("click", function () {
+          if (checkbox.checked) {
+            // Wrap the task text in a <del> tag
+            let del = document.createElement("del");
+            del.appendChild(document.createTextNode(task));
+            li.replaceChild(del, taskText);
+          } else {
+            // Remove the <del> tag if unchecked
+            li.replaceChild(taskText, li.querySelector("del"));
+          }
+        });
+        // Clear the input field
+        taskInput.value = "";
+      }
+    </script>
+  </body>
+</html>

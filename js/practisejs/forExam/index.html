@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" onsubmit="return formValidate()" name="myform">
+      Name: <input type="text" name="name" id="name" /><br />
+      Password: <input type="password" name="password" id="password" /><br />
+      Email: <input type="email" name="email" id="email" /><br />
+      Phone: <input type="number" name="number" id="number" /><br />
+      Gender: <input type="radio" name="gender" id="male" />Male
+      <input type="radio" name="gender" id="female" />Female<br />
+
+      <select name="course" id="course">
+        <option>Choose your branch</option>
+        <option>CSIT</option>
+        <option>BIT</option>
+        <option>BCA</option></select
+      ><br />
+      <input type="submit" value="submit" />
+    </form>
+    <script>
+      function formValidate() {
+        let name = document.forms["myform"]["name"].value;
+        let password = document.forms["myform"]["password"].value;
+        let email = document.forms["myform"]["email"].value;
+        let number = document.forms["myform"]["number"].value;
+        let gender = document.forms["myform"]["gender"];
+
+        if (name == "" || password == "" || email == "" || number == "") {
+          alert("all field must be filled up");
+        }
+        if (password.length < 8) {
+          alert("password lenght must contain 8 letter");
+        }
+        if (!/[0-9]/.test(password)) {
+          alert("password must contain one number");
+        }
+        if (!/[A-Z]/.test(name)) {
+          alert("Name must contain an uppercase letter");
+        }
+        var patt = /^[0-9]+$/;
+        if (patt.test(number)) {
+          alert("Number is valid");
+        }
+
+        if (gender[0].checked == false && gender[1].checked == false) {
+          alert("You must choose gender");
+        }
+
+        const selectedCourse = document.getElementById("course").value;
+        if (selectedCourse === "") {
+          alert("You have to select a branch");
+          event.preventDefault(); // Prevent form submission
+        } else {
+          alert("You chose " + selectedCourse);
+        }
+      }
+    </script>
+  </body>
+</html>

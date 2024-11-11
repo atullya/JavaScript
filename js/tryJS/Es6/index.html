@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="show"></p>
+    <script>
+      let arr = [
+        "apple",
+        "banana",
+        "apple",
+        "cat",
+        "banana",
+        "cat",
+        "apple",
+        "smoke",
+        "mouse",
+      ];
+      let [a, , ...c] = arr;
+      console.log(c);
+      let uniqueElement = [...new Set(arr)];
+      console.log(uniqueElement);
+      let show = document.getElementById("show");
+      show.innerHTML = "";
+      for (let i = 0; i < uniqueElement.length; i++) {
+        show.innerHTML += `<li>${uniqueElement[i]}</li>`;
+      }
+    </script>
+  </body>
+</html>

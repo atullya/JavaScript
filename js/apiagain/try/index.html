@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Display</title>
+    <style>
+      .meal {
+        border: 1px solid #ccc;
+        padding: 16px;
+        margin: 16px;
+        border-radius: 8px;
+      }
+      .meal h2 {
+        margin: 0 0 8px;
+      }
+      .meal img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="meals-container"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const apiURL =
+          "https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata";
+        const mealsContainer = document.getElementById("meals-container");
+
+        fetch(apiURL)
+          .then((response) => response.json())
+          .then((data) => {
+            const meals = data.meals;
+            if (meals) {
+              meals.forEach((meal) => {
+                const mealDiv = document.createElement("div");
+                mealDiv.classList.add("meal");
+
+                const mealName = document.createElement("h2");
+                mealName.textContent = meal.strMeal;
+
+                const mealImage = document.createElement("img");
+                mealImage.src = meal.strMealThumb;
+                mealImage.alt = meal.strMeal;
+
+                const mealCategory = document.createElement("p");
+                mealCategory.textContent = `Category: ${meal.strCategory}`;
+
+                const mealArea = document.createElement("p");
+                mealArea.textContent = `Area: ${meal.strArea}`;
+
+                const mealInstructions = document.createElement("p");
+                mealInstructions.textContent = `Instructions: ${meal.strInstructions}`;
+
+                const mealIngredients = document.createElement("p");
+                mealIngredients.textContent = "Ingredients:";
+                const ingredientsList = document.createElement("ul");
+                for (let i = 1; i <= 20; i++) {
+                  if (meal[`strIngredient${i}`]) {
+                    const ingredientItem = document.createElement("li");
+                    ingredientItem.textContent = `${
+                      meal[`strIngredient${i}`]
+                    } - ${meal[`strMeasure${i}`]}`;
+                    ingredientsList.appendChild(ingredientItem);
+                  }
+                }
+
+                const mealTags = document.createElement("p");
+                mealTags.textContent = `Tags: ${meal.strTags}`;
+
+                const mealYoutube = document.createElement("a");
+                mealYoutube.href = meal.strYoutube;
+                mealYoutube.textContent = "Watch on YouTube";
+                mealYoutube.target = "_blank";
+
+                mealDiv.appendChild(mealName);
+                mealDiv.appendChild(mealImage);
+                mealDiv.appendChild(mealCategory);
+                mealDiv.appendChild(mealArea);
+                mealDiv.appendChild(mealInstructions);
+                mealDiv.appendChild(mealIngredients);
+                mealDiv.appendChild(ingredientsList);
+                mealDiv.appendChild(mealTags);
+                mealDiv.appendChild(mealYoutube);
+
+                mealsContainer.appendChild(mealDiv);
+              });
+            } else {
+              mealsContainer.textContent = "No meals found";
+            }
+          })
+          .catch((error) => {
+            console.error("Error fetching the meal data:", error);
+            mealsContainer.textContent = "Error fetching the meal data";
+          });
+      });
+    </script>
+  </body>
+</html>

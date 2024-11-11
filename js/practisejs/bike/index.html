@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="show"></p>
+
+    <script>
+      async function getData() {
+        let response = await fetch(
+          "https://api.api-ninjas.com/v1/motorcycles?make=kawasaki&model=ninja",
+          {
+            headers: {
+              "X-Api-Key": "+QSRa+Vn43LM0PY4ltR8bA==Pg5ubnXHgv6Bj7gp",
+            },
+          }
+        );
+        let data = await response.json();
+        let show = document.getElementById("show");
+        show.innerHTML = "";
+        data.forEach((element, index) => {
+          show.innerHTML += `
+            ${element.front_brakes}<br>
+            <button id="press-${index}">View More</button>
+            <p id="fuel-${index}" data-fuel="${element.fuel_system}" style="display: none;"></p>
+            <br>`;
+        });
+
+        // Adding event listeners to each button
+        data.forEach((element, index) => {
+          document
+            .getElementById(`press-${index}`)
+            .addEventListener("click", () => {
+              let fuelElement = document.getElementById(`fuel-${index}`);
+              fuelElement.innerHTML = `Fuel System: ${fuelElement.getAttribute(
+                "data-fuel"
+              )}`;
+              fuelElement.style.display = "block";
+            });
+        });
+      }
+      getData();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="show1"></p>
+    <p id="show"></p>
+    <input type="text" id="get" />
+    <script>
+      window.addEventListener("input", function (e) {
+        console.log(e);
+        let get = e.target.value;
+        document.getElementById("show").innerHTML = "Hello " + get + " Bro";
+        localStorage.setItem("name", get);
+        const item = localStorage.getItem("name");
+        document.getElementById("show1").innerHTML = item;
+      });
+    </script>
+  </body>
+</html>

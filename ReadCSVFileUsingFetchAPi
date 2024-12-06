@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display CSV in DOM</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table, th, td {
+        border: 1px solid black;
+      }
+      th, td {
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSV Data Display</h1>
+    <div id="output"></div>
+
+    <script>
+      let getData = async () => {
+        try {
+          let res = await fetch("organizations-10000.csv", {
+            method: "get",
+            headers: {
+              "content-type": "text/csv;charset=UTF-8",
+            },
+          });
+          let data = await res.text();
+
+          // Parse CSV data
+          let rows = data.split("\n").slice(0, 101); // Limit to 100 rows + header
+          let table = document.createElement("table");
+
+          // Generate table rows and cells
+          rows.forEach((row, index) => {
+            let tr = document.createElement("tr");
+            let cells = row.split(",");
+            cells.forEach(cell => {
+              let td = document.createElement(index === 0 ? "th" : "td");
+              td.textContent = cell.trim();
+              tr.appendChild(td);
+            });
+            table.appendChild(tr);
+          });
+
+          // Append table to the DOM
+          document.getElementById("output").appendChild(table);
+        } catch (error) {
+          console.error(error);
+          document.getElementById("output").textContent = "Error loading CSV data.";
+        }
+      };
+      getData();
+    </script>
+  </body>
+</html>

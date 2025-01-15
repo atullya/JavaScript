@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deck of Cards API Example</title>
+  </head>
+  <body>
+    <button onclick="createDeck()">Create Deck</button>
+    <button onclick="drawCards()">Draw Cards</button>
+    <div id="cards"></div>
+    <script>
+      let deckId = "";
+
+      const createDeck = async () => {
+        try {
+          let response = await fetch(
+            "https://deckofcardsapi.com/api/deck/new/shuffle/"
+          );
+          let data = await response.json();
+          deckId = data.deck_id;
+          console.log(`Deck created: ${deckId}`);
+        } catch (error) {
+          console.error("Error creating deck:", error);
+        }
+      };
+
+      const drawCards = async () => {
+        if (!deckId) {
+          alert("Please create a deck first.");
+          return;
+        }
+
+        try {
+          let response = await fetch(
+            `https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=2`
+          );
+          let data = await response.json();
+          console.log(data);
+
+          let content = "";
+          data.cards.forEach((card) => {
+            content += `
+              <div>
+                <p>${card.value} of ${card.suit}</p>
+                <img src="${card.image}" alt="${card.value} of ${card.suit}">
+              </div>
+            `;
+          });
+
+          document.getElementById("cards").innerHTML = content;
+        } catch (error) {
+          console.error("Error drawing cards:", error);
+        }
+      };
+    </script>
+  </body>
+</html>

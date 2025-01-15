@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <section id="nambar">
+      <nav>
+        <div class="logo">
+          <img src="images/amazon-logo-white.png" alt="" />
+        </div>
+        <div class="country-current">
+          <ion-icon name="location-outline" class="icon"></ion-icon>
+          <div class="text">
+            <p>Deliver to <span>Nepal</span></p>
+          </div>
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Search Amazon" />
+          <div class="search">
+            <ion-icon name="search-outline" class="se"></ion-icon>
+          </div>
+        </div>
+        <div class="language">
+          <div class="en">
+            <ion-icon name="flag-outline"></ion-icon>
+            EN
+          </div>
+          <!-- <ion-icon name="search-outline"></ion-icon> -->
+        </div>
+        <div class="account">
+          <p>Hello, sign in <span>Account & Lists</span></p>
+        </div>
+        <div class="returns">Returns <span>& Orders</span></div>
+        <div class="cart">
+          <ion-icon name="cart-outline"></ion-icon>
+          <p>Cart</p>
+        </div>
+      </nav>
+    </section>
+
+    <h2>hello bor</h2>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        margin-left: 150px;
+        align-items: baseline;
+      }
+      .container .card img {
+        object-fit: cover;
+        height: 150px;
+        width: 150px;
+      }
+      .container .title {
+        width: 250px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        margin-top: 20px;
+        font-style: normal;
+      }
+      .container button {
+        margin-top: 10px;
+        padding: 10px;
+      }
+      .shop {
+        background-color: #131921;
+
+        outline: none;
+        border: none;
+        color: white;
+      }
+    </style>
+    <div class="container"></div>
+    <script>
+      let allData = [];
+      fetch("amazon.json")
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          console.log(data);
+
+          let content = "";
+          let info = document.querySelector(".container");
+          info.innerHTML = "";
+          allData = data;
+          data.forEach((element, index) => {
+            content += `
+            <div class="card ">
+              <img src="${element.image}" alt="Image">
+              <p class="title">${element.name}</p>
+               <button onclick="showItem(event,${index})" class="shop" >Shop now</button>
+              </div>
+          `;
+          });
+          info.innerHTML = content;
+        });
+      function showItem(event, index) {
+        event.preventDefault();
+        let setItem = allData[index];
+        localStorage.setItem("Item", JSON.stringify(setItem));
+        window.open("productDetail.html");
+      }
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

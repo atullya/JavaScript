@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" placeholder="search" id="search" />
+    <button onclick="getData()">Click Here</button>
+    <div id="content"></div>
+    <script>
+      let getData = async () => {
+        try {
+          let search = document.getElementById("search").value;
+          let response = await fetch(
+            `https://api.unsplash.com/search/photos?query=${search}&client_id=RZEIOVfPhS7vMLkFdd2TSKGFBS4o9_FmcV1Nje3FSjw`
+          );
+
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+
+          let data = await response.json();
+
+          if (data.results.length === 0) {
+            throw new Error("No results found");
+          }
+
+          console.log(data);
+          console.log(data.results);
+          let allData = data.results;
+          let content = "";
+
+          allData.forEach((element) => {
+            content += `
+              <p>ID: ${element.id}</p>
+              <img src=${element.links.download} height="250px" width="250px">
+              <p>Description: ${element.alt_description}</p>
+              <p>User: ${element.user.id}</p>
+              <p>User: ${element.user.first_name}</p>
+            `;
+          });
+
+          document.getElementById("content").innerHTML = content;
+        } catch (error) {
+          console.error("Error:", error);
+          document.getElementById(
+            "content"
+          ).innerHTML = `<p>Error: ${error.message}</p>`;
+        }
+      };
+    </script>
+  </body>
+</html>

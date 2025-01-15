@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demon Slayer Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        gap: 120px;
+        margin-right: 160px;
+      }
+      .cat-1 {
+        text-align: center;
+        padding: 20px 30px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 29px;
+      }
+      .cat-1 .category,
+      .cat-1 .subcategory {
+        color: blue;
+        display: flex;
+        font-size: 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        gap: 25px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .favorite {
+        margin-top: 20px;
+      }
+
+      .favorite .card {
+        margin-bottom: 10px;
+      }
+      .favorite a {
+        margin-left: 620px;
+        margin-bottom: 50px;
+      }
+      #custom-alert {
+        display: none;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="custom-alert" class="alert alert-primary" role="alert">
+      Successfully added to Favorite
+    </div>
+    <div class="favorite">
+      <a href="favorite.html" class="btn btn-primary">Show Favorites</a>
+    </div>
+    <div class="cat-1">
+      <h2>Select Category</h2>
+      <div class="category"></div>
+      <div class="subcategory"></div>
+    </div>
+    <div id="container" class="container">
+      <!-- Content will be dynamically added here -->
+    </div>
+
+    <script>
+      let allData = [];
+      let filteredData = [];
+      let filteredIndexes = [];
+      let cart = [];
+
+      async function getData() {
+        try {
+          let response = await fetch("data.json");
+          let data = await response.json();
+          allData = data;
+          filteredData = data;
+          let allCat = [];
+          let cat = document.querySelector(".category");
+          cat.innerHTML = "";
+
+          data.forEach((element) => {
+            if (!allCat.includes(element.category)) {
+              cat.innerHTML += `<label>
+                  <input onclick='categoryFilter()' name="category" value="${element.category}" type="radio"> ${element.category}
+                </label>`;
+              allCat.push(element.category);
+            }
+          });
+          showResult(data); //initial
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+      }
+
+      function showResult(data) {
+        let container = document.getElementById("container");
+        container.innerHTML = ""; // Clear existing content before appending
+        filteredIndexes = []; // Reset filtered indexes
+        data.forEach((element, index) => {
+          let cardHtml = `
+              <div class="card" style="width: 18rem;">
+                <img src="${element.image}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">${element.name}</h5>
+                  <a href="#" onclick="next(event, ${index})" class="btn btn-primary">View Details</a>
+                  <button class="btn btn-danger" data-id="${element.id}" onclick="addToFavorite(this)">Favorite</button>
+                </div>
+              </div>
+            `;
+          container.innerHTML += cardHtml;
+          filteredIndexes.push(allData.indexOf(element)); // Track index of displayed items
+        });
+      }
+
+      function categoryFilter() {
+        let checkInput = document.querySelectorAll("input[name='category']");
+        let checkedCategories = [];
+        checkInput.forEach((e) => {
+          if (e.checked) {
+            checkedCategories.push(e.value);
+          }
+        });
+
+        let subCat = document.querySelector(".subcategory");
+        subCat.innerHTML = ""; // Clear existing subcategory filters
+
+        if (checkedCategories.length === 0) {
+          filteredData = allData;
+        } else {
+          filteredData = allData.filter((element) =>
+            checkedCategories.includes(element.category)
+          );
+          // Add subcategory filters if "demons" or "human" is selected
+          if (
+            checkedCategories.includes("demons") ||
+            checkedCategories.includes("human")
+          ) {
+            let families = [];
+            filteredData.forEach((element) => {
+              if (!families.includes(element.family)) {
+                subCat.innerHTML += `<label>
+                    <input onclick='subcategoryFilter()' name="family" value="${element.family}" type="radio"> ${element.family}
+                  </label>`;
+                families.push(element.family);
+              }
+            });
+          }
+        }
+        showResult(filteredData); // Show filtered results
+      }
+
+      function subcategoryFilter() {
+        let checkInput = document.querySelectorAll("input[name='family']");
+        let checkedFamilies = [];
+        checkInput.forEach((e) => {
+          if (e.checked) {
+            checkedFamilies.push(e.value);
+          }
+        });
+
+        if (checkedFamilies.length === 0) {
+          showResult(filteredData); // Show main category filtered results if no subcategory is selected
+        } else {
+          let finalFilteredData = filteredData.filter((element) =>
+            checkedFamilies.includes(element.family)
+          );
+          showResult(finalFilteredData); // Show final filtered results
+        }
+      }
+
+      function next(event, index) {
+        event.preventDefault();
+        const originalIndex = filteredIndexes[index]; // Get original index from filteredIndexes
+        const itemData = allData[originalIndex]; // Use original index to get item data from allData
+        localStorage.setItem("itemData", JSON.stringify(itemData));
+        window.location.href = "details.html";
+      }
+      //only to show alert don't neeed to foucs on it!
+      function showCustomAlert(message) {
+        const alertBox = document.getElementById("custom-alert");
+        alertBox.innerText = message;
+        alertBox.style.display = "block";
+        setTimeout(() => {
+          alertBox.style.display = "none";
+        }, 3000);
+      }
+
+      function addToFavorite(button) {
+        const itemId = button.getAttribute("data-id");
+        const item = allData.find((element) => element.id == itemId);
+        if (item && !cart.some((cartItem) => cartItem.id == item.id)) {
+          cart.push(item);
+          localStorage.setItem("favorites", JSON.stringify(cart));
+          showCustomAlert("Successfully added to Favorite");
+          showFavorites();
+        }
+      }
+
+      // function showFavorites() {
+      //   let favoriteList = document.querySelector(".favorite-list");
+      //   favoriteList.innerHTML = "";
+      //   cart.forEach((item, index) => {
+      //     let favoriteHtml = `
+      //   <div class="card" style="width: 18rem;">
+      //     <img src="${item.image}" class="card-img-top" alt="...">
+      //     <div class="card-body">
+      //       <h5 class="card-title">${item.name}</h5>
+      //       <p class="card-text">${item.description}</p>
+      //       <button class="btn btn-danger btn-sm" onclick='removeFromCart(${index})'>Remove</button>
+      //     </div>
+      //   </div>
+      // `;
+      //     favoriteList.innerHTML += favoriteHtml;
+      //   });
+      // }
+      // function removeFromCart(index) {
+      //   cart.splice(index, 1); // Removes the item at the specified index from the cart array
+      //   showFavorites(); // Updates the display of favorite items to reflect the removal
+      // }
+      getData();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

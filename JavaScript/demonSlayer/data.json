@@ -1,0 +1,404 @@
+[
+  {
+    "id": 1,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Ubuyashiki Family",
+    "name": "Kagaya Ubuyashiki",
+    "image": "Image/img1.png",
+    "description": "Kagaya Ubuyashiki (産うぶ屋や敷しき 耀かが哉や Ubuyashiki Kagaya?) was a major supporting character of Demon Slayer: Kimetsu no Yaiba. He was the 97th leader of the Demon Slayer Corps[2] known mainly as Oyakata-sama (お館󠄃やかた樣さま? lit. by his subordinates and peers and was also the head of the Ubuyashiki Family",
+    "abilities": "Kagaya possesses the remarkable ability to conceal his emotions and present a composed and controlled outward appearance. He utilizes this skill to maintain a calm and serene composure and deceive others' perception of him. When Muzan, the target of Kagaya's deep-seated hatred, confronted him at his home, Kagaya presented himself with the serene smile of a Buddha, effectively masking any trace of murderous intent."
+  },
+  {
+    "id": 2,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Ubuyashiki Family",
+    "name": "Amane Ubuyashiki",
+    "image": "Image/img2.png",
+    "description": "Amane Ubuyashiki (産うぶ屋や敷しき あまね Ubuyashiki Amane?), née Amane Himorogi (神ひも籬ろぎ あまね Himorogi Amane?)[2], is a supporting character in Demon Slayer: Kimetsu no Yaiba. She is the wife and primary caretaker of Kagaya Ubuyashiki and the mother of Hinaki, Nichika, Kiriya, Kanata, and Kuina Ubuyashiki.",
+    "abilities": "Leadership Skills: When her husband's health begins to fail, Amane shows herself to be a highly competent leader and military commander, having been able to fill in for her husband in his duties as Corps Commander for the Demon Slayer Corps during the final days of his life. This is seen when Amane possesses the necessary skills to direct and lead the Hashira themselves despite their extreme personalities and dispositions."
+  },
+  {
+    "id": 3,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Ubuyashiki Family",
+    "name": "Hinaki Ubuyashiki",
+    "image": "Image/img3.png",
+    "description": "Hinaki Ubuyashiki (産うぶ屋や敷しき ひなき Ubuyashiki Hinaki?) is the eldest daughter of Kagaya Ubuyashiki.",
+    "abilities": "not known"
+  },
+  {
+    "id": 4,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Ubuyashiki Family",
+    "name": "Kiriya Ubuyashiki",
+    "image": "Image/img4.png",
+    "description": "Kiriya Ubuyashiki (産うぶ屋や敷しき 輝き利り哉や Ubuyashiki Kiriya?) is the only son and middle child of Kagaya Ubuyashiki and the head of the Ubuyashiki Household. After his father's passing, he leads the Demon Slayer Corps as the 98th and final leader.",
+    "abilities": "Extraordinary Memory: Kiriya has shown extremely good memory. He and his sisters are able to map out and memorize the nearly constantly changing Infinity Castle, creating accurate maps to navigate and guide the Hashira through it in real-time.Foresight: Similar to his father and his ancestors, Kiriya has a high, almost prophetic intuition, being able to make accurate guesses and hypotheses that were often proven right through intuition alone.Leadership Skills: Much like his father, Kiriya displays advanced skills in leading and commanding an army into battle despite his young age. He is able to immediately take command of the Demon Slayer Corps' command structure and assist the Hashira as logistical support, guiding them into battle"
+  },
+  {
+    "id": 5,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Hashira",
+    "name": "Giyu Tomioka",
+    "image": "Image/img5.png",
+    "description": "Giyu Tomioka (冨とみ岡おか 義ぎ勇ゆう Tomioka Giyū?) is a major supporting character of Demon Slayer: Kimetsu no Yaiba. He is a Demon Slayer of the Demon Slayer Corps and the current Water Hashira (水みず柱ばしら Mizu Bashira?).",
+    "abilities": "As a Hashira of the Demon Slayer Corps, Giyu is a very powerful and skilled combatant.[16] From the beginning, Giyu showed how much he outclassed Tanjiro and his friends, being able to effortlessly capture Nezuko from him and later knocked both of them unconscious in a single blow. Later, he was able to easily defeat Father in his transformed state[17] and Rui, Lower Rank Five,[18] something Tanjiro and Inosuke respectively failed to accomplish. He also fought equally against fellow Hashira Sanemi Shinazugawa in a sparring match. Giyu was also shown easily beating dozens of demons equal to that of the Lower Ranks of the Twelve Kizuki. On top of his incredible skills as a Demon Slayer, Giyu is also a very capable teammate, able to grasp their intentions and work in tandem with it."
+  },
+  {
+    "id": 6,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Hashira",
+    "name": "Mitsuri Kanroji",
+    "image": "Image/img6.png",
+    "description": "Mitsuri Kanroji (甘かん露ろ寺じ 蜜みつ璃り Kanroji Mitsuri?) is a major supporting character of Demon Slayer: Kimetsu no Yaiba. She is a Demon Slayer of the Demon Slayer Corps and the current Love Hashira (恋こい柱ばしら Koi Bashira?).",
+    "abilities": "As a Hashira of the Demon Slayer Corps, Mitsuri is a very powerful and skilled combatant.[10] She is said to have completed the Final Selection within a mere six months of training, which Kyojuro Rengoku considers outstanding.[6] Her abilities were put on display during the events within the Swordsmith Village, where she quickly subdued and defeated a group of demons created by Upper Rank Five, Gyokko, and later played a big part in the fight against Upper Rank Four, Hantengu, specifically against his manifestation of hatred Zohakuten, which possesses the combined strength of four Upper Rank demons."
+  },
+  {
+    "id": 7,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Hashira",
+    "name": "Obanai Iguro",
+    "image": "Image/img7.png",
+    "description": "Obanai Iguro (伊い黒ぐろ 小お芭ば内ない Iguro Obanai?) is a major supporting character of Demon Slayer: Kimetsu no Yaiba. He is a Demon Slayer of the Demon Slayer Corps and the current Serpent Hashira (蛇へび柱ばしら Hebi Bashira?)",
+    "abilities": "As a Hashira of the Demon Slayer Corps, Obanai is a very powerful and skilled combatant.[10] It was revealed that he was more or less blind in his right eye, meaning he ascended to the highest rank in the Demon Slayer Corps with one functioning eye. This, in addition to his small physique and lesser physical strength when compared to his peers, makes it especially impressive that Obanai managed to attain the title of Hashira. During the events in the Infinity Castle, Obanai was able to quickly decapitate numerous demons on par with Lower Ranks with ease and hold back the newly appointed Upper Rank Four, Nakime"
+  },
+  {
+    "id": 8,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Hashira",
+    "name": "Sanemi Shinazugawa",
+    "image": "Image/img8.png",
+    "description": "Sanemi Shinazugawa (不死しなず川がわ 実さね弥み Shinazugawa Sanemi?) is a major supporting character of Demon Slayer: Kimetsu no Yaiba. He is a Demon Slayer of the Demon Slayer Corps and the current Wind Hashira (風かぜ柱ばしら Kaze Bashira?).",
+
+    "abilities": "As a Hashira of the Demon Slayer Corps, Sanemi is a very powerful and skilled combatant.[5] He has displayed his extraordinary abilities and proficiency in combat on multiple occasions. When sparring with Giyu Tomioka, Sanemi was able to fight on equal grounds with the Water Hashira. In the battle within the Infinity Castle, Sanemi was shown to be capable of instantly annihilating hordes of demons that were comparable to the Lower Ranks in strength. Most notably, he could hold his own against Upper Rank One, Kokushibo. According to the demon, Sanemi's physical abilities and techniques have reached their peak.[6] Kokushibo also commented that Sanemi and the accompanying Gyomei Himejima stood out as highly skilled even among the ranks of the already powerful Hashira"
+  },
+  {
+    "id": 9,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Hashira",
+    "name": "Gyomei Himejima",
+    "image": "Image/img9.png",
+    "description": "Gyomei Himejima (悲ひ鳴め嶼じま 行ぎょう冥めい Himejima Gyōmei?) is a major supporting character of Demon Slayer: Kimetsu no Yaiba. He is a Demon Slayer of the Demon Slayer Corps and the current Stone Hashira (岩いわ柱ばしら Iwa Bashira?). Gyomei also serves as the mentor of Genya Shinazugawa.",
+    "abilities": "As a Hashira of the Demon Slayer Corps, Gyomei is a very powerful and skilled combatant.[10] He is stated by both Tanjiro Kamado and Inosuke Hashibira to be the strongest Demon Slayer in the entire Demon Slayer Corps.[11] Additionally, Tengen Uzui had once called Gyomei a complete enigma which can either refer to his incredible physical prowess or his tremendous skill despite his blindness.[12] This is further given credence by Kokushibo, who noted that Gyomei's natural physical abilities have been trained to their absolute peak and had stated that in the last three hundred years, he has not encountered a warrior of Gyomei's caliber.[13] He was also able put up a fight against the strongest Upper Rank for a brief time without the use of his Demon Slayer Mark, further showing the extent of his skill.[14] Moreover, Kokushibo noted that Gyomei and Sanemi were two of the more highly skilled combatants, even among the ranks of the already powerful Hashira.[15] After the fight, Gyomei, who was injured and slightly fatigued, was able to contribute greatly in driving Muzan Kibutsuji, the Demon King, into a corner."
+  },
+  {
+    "id": 10,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Hashira",
+    "name": "Muichiro Tokito",
+    "image": "Image/img10.png",
+    "description": "Muichiro Tokito (時とき透とう 無む一いち郎ろう Tokitō Muichirō?) is a major supporting character of Demon Slayer: Kimetsu no Yaiba. He is a Demon Slayer of the Demon Slayer Corps and the current Mist Hashira (霞かすみ柱ばしら Kasumi Bashira?).[3].",
+    "abilities": "Despite his young age in comparison to his Hashira brethren, Muichiro is an incredibly talented and skilled member of the Demon Slayer Corps, who was noted by the Flame Hashira Kyojuro Rengoku to be more skilled than he was at his age.[4] Even before becoming a Demon Slayer, he was able to completely overpower a demon using only wooden stakes and farming tools.[5] He has the astounding feat of becoming a Hashira a mere two months after picking up a sword,[6][7] a feat that would normally take five years of training for the average person and at best two years,[8] which earned him the praise of the Sound Hashira Tengen Uzui."
+  },
+  {
+    "id": 11,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Hashira",
+    "name": "Shinobu Kocho",
+    "image": "Image/img11.png",
+    "description": "Shinobu Kocho (胡こ蝶ちょう しのぶ Kochō Shinobu?) is a major supporting character of Demon Slayer: Kimetsu no Yaiba. She is a Demon Slayer of the Demon Slayer Corps and the current Insect Hashira (蟲むし柱ばしら Mushi Bashira?).",
+    "abilities": "As a Hashira of the Demon Slayer Corps, Shinobu is a very powerful and skilled combatant.[10] Despite not possessing the physical strength to cut off a demon's head common to that of an average Demon Slayer, Shinobu uses her creativity, ingenuity and other physical abilities to more than make up for it. Instead of the traditional method of decapitating a demon with a Nichirin Sword to kill them, Shinobu opts to use a modified version of a katana that acts as a stinger to inject a powerful wisteria-based poison that is lethal to demons.[11][12] In addition to her intellect, she is extremely fast and agile, allowing her to overpower demons very quickly.[13][14] Her true strength was revealed during her battle with the second most powerful Upper Rank demon, Doma, where she was able to go toe-to-toe with the demon briefly, even managing to outmatch him slightly and received praise from him."
+  },
+  {
+    "id": 12,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Hashira",
+    "name": "Kyojuro Rengoku",
+    "image": "Image/img12.png",
+    "description": "Kyojuro Rengoku (煉れん獄ごく 杏きょう寿じゅ郎ろう Rengoku Kyōjurō?) was a major supporting character of Demon Slayer: Kimetsu no Yaiba and a major character in the Mugen Train Arc. He was a Demon Slayer of the Demon Slayer Corps and the late Flame Hashira (炎えん柱ばしら En Bashira?).",
+    "abilities": "As a Hashira of the Demon Slayer Corps, Kyojuro was a very powerful and skilled combatant.[3] Before he took his father's place, Kyojuro was already shown to be an amazing fighter. He successfully avenged the death of the 9 Demon Slayers that died to the Flute Demon by himself and later managed to singlehandedly defeat Lower Rank Two, Hairo, who even appraised his swordsmanship before he died. Moreover, his father, Shinjuro Rengoku, stated that, after he stopped teaching his son, Kyojuro trained himself to become a Hashira by learning from the guide book of the Flame Breathing style, a book which only had three volumes"
+  },
+  {
+    "id": 13,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Hashira",
+    "name": "Tengen Uzui",
+    "image": "Image/img13.png",
+    "description": "Tengen Uzui (宇う髄ずい 天てん元げん Uzui Tengen?) is a major supporting character of Demon Slayer: Kimetsu no Yaiba and a major character in the Entertainment District Arc. He was a former member of the Demon Slayer Corps, standing as the previous Sound Hashira (音おと柱ばしら Oto Bashira?).",
+    "abilities": "As a Hashira of the Demon Slayer Corps, Tengen is a very powerful and skilled combatant.[16] He has displayed incredible physical feats of strength and speed, being seen as the second physically strongest and the fastest runner out of the Taisho era's Hashira.[3] He could match the combat proficiency of both Daki and Gyutaro, both Upper Rank demons that have fought and killed numerous Hashira in the past.[17] Tengen was also able to effortlessly decapitate Daki without her realizing it, to the point that he didn't see her as an Upper Rank demon at all.[18] Impressively, he was able to fend off the combined efforts of Daki and Gyutaro while being infected by a poison that would kill someone quickly under normal circumstances, even managing to protect bystanders in the process"
+  },
+  {
+    "id": 14,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Hashira",
+    "name": "Tengen Uzui",
+    "image": "Image/img14.png",
+    "description": "Tengen Uzui (宇う髄ずい 天てん元げん Uzui Tengen?) is a major supporting character of Demon Slayer: Kimetsu no Yaiba and a major character in the Entertainment District Arc. He was a former member of the Demon Slayer Corps, standing as the previous Sound Hashira (音おと柱ばしら Oto Bashira?).",
+    "abilities": "As a Hashira of the Demon Slayer Corps, Tengen is a very powerful and skilled combatant.[16] He has displayed incredible physical feats of strength and speed, being seen as the second physically strongest and the fastest runner out of the Taisho era's Hashira.[3] He could match the combat proficiency of both Daki and Gyutaro, both Upper Rank demons that have fought and killed numerous Hashira in the past.[17] Tengen was also able to effortlessly decapitate Daki without her realizing it, to the point that he didn't see her as an Upper Rank demon at all.[18] Impressively, he was able to fend off the combined efforts of Daki and Gyutaro while being infected by a poison that would kill someone quickly under normal circumstances, even managing to protect bystanders in the process"
+  },
+  {
+    "id": 15,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "demon slayer",
+    "name": "Tanjiro Kamado",
+    "image": "Image/img15.png",
+    "description": "Tanjiro Kamado (竈門かまど 炭たん治じ郎ろう Kamado Tanjirō?) is the main protagonist of Demon Slayer: Kimetsu no Yaiba. He is a Demon Slayer in the Demon Slayer Corps who joined to find a remedy to turn his sister, Nezuko Kamado, back into a human and to hunt down and kill demons,[5] and later swore to defeat Muzan Kibutsuji,[6] the King of Demons, in order to prevent others from suffering the same fate as him.",
+    "abilities": "From the beginning, Tanjiro was shown to be a prodigious fighter, having a strong natural aptitude for combat, especially swordsmanship. Tanjiro was already introduced to have above-average human abilities, like honed senses, a sharp sense of smell, immense willpower, and great intellect. His naturally obtained abilities go so far as to allow him to outsmart and catch Giyu Tomioka, one of the most powerful Demon Slayers, off guard and nearly land a fatal blow on him despite being clouded with intense emotions. Moreover, in his first encounter with a demon, Tanjiro managed to slash the neck of the Temple Demon and impress him, later being able to fend the demon off with a regular hatchet and come up with unique solutions such as using his durable head to headbutt the Temple Demon and also using his hatchet to pin him down and prevent him from moving."
+  },
+  {
+    "id": 16,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "demon slayer",
+    "name": "Zenitsu Agatsuma",
+    "image": "Image/img16.png",
+    "description": "Zenitsu Agatsuma (我あが妻つま 善ぜん逸いつ Agatsuma Zen'itsu?) is one of the main characters of Demon Slayer: Kimetsu no Yaiba and along with Inosuke Hashibira, a travelling companion of Tanjiro Kamado and Nezuko Kamado. He is also a Demon Slayer in the Demon Slayer Corps.",
+    "abilities": "From the beginning, Zenitsu comes off as a talented and skilled Demon Slayer, though he denies this. His strength awakens when he is asleep, as his nervous demeanour is what normally keeps him from accessing his abilities, making him more sagacious, calm, and precise in combat. This allowed him to instantly decapitate the Tongue Demon and defeat the Son of the Spider Family by himself. He was later able to defend three entire train carts being attacked by Enmu, Lower Rank One, along with Nezuko. A few months after that, he was able to go toe-to-toe with an awakened Daki with the assistance of Inosuke, and later managed to blitz her with Thunderclap and Flash: Godspeed. As further credence to his strength, Zenitsu was able to advance to the highest point of the Hashira Training."
+  },
+  {
+    "id": 17,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "demon slayer",
+    "name": "Inosuke Hashibira",
+    "image": "Image/img17.png",
+    "description": "Inosuke Hashibira (嘴はし平びら 伊い之の助すけ Hashibira Inosuke?) is one of the main characters of Demon Slayer: Kimetsu no Yaiba and along with Zenitsu Agatsuma, a traveling companion of Tanjiro Kamado and Nezuko Kamado. He is also a Demon Slayer in the Demon Slayer Corps.",
+    "abilities": "Inosuke is a very skilled and talented swordsman, as he was able to learn Total Concentration Breathing on his own, develop his very own Breathing Style known as Beast Breathing based on his own instincts and upbringing in the mountains by wild boars, and pass Final Selection to become a Demon Slayer all without formal training. Inosuke is more than capable of hunting and slaying demons on his own, as he easily killed the Horned Demon without any trouble. He has shown on multiple occasions to be able to hold his own and contribute in fights against Upper Rank demons of the Twelve Kizuki, including Upper Rank Six, Gyutaro and Daki, as well as the much stronger Upper Rank Two, Doma."
+  },
+  {
+    "id": 18,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "demon slayer",
+    "name": "Genya Shinazugawa",
+    "image": "Image/img18.png",
+    "description": "Genya Shinazugawa (不死しなず川がわ 玄げん弥や Shinazugawa Gen'ya?) is a major supporting character of Demon Slayer: Kimetsu no Yaiba. He is a Demon Slayer in the Demon Slayer Corps and the younger brother of the Wind Hashira, Sanemi Shinazugawa.",
+    "abilities": "As one of the five that survived Final Selection, Genya possesses a relatively strong foundation as a Demon Slayer even without utilizing a Breathing Style. His skills were exemplified in the battle against Hantengu, the fourth strongest Upper Rank, when he snuck up on two of his clones and successfully shot them both and proceeded to decapitate them in quick succession. When he consumed the flesh of Aizetsu, Genya managed to overpower the Upper Rank, stabbing Aizetsu into a tree with his own Yari and ripping off his head. When Mitsuri Kanroji, the Love Hashira, was nearly struck and killed by Zohakuten, Genya, along with Tanjiro Kamado and Nezuko Kamado, managed to save her before the attack connected."
+  },
+  {
+    "id": 19,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "demon slayer",
+    "name": "Murata",
+    "image": "Image/img19.png",
+    "description": "Murata (村むら田た Murata?) is a supporting character of Demon Slayer: Kimetsu no Yaiba. He is a member of the Demon Slayer Corps and an ally of Tanjiro Kamado.",
+    "abilities": "Although not on par with the likes of Tanjiro or Inosuke, Murata's prowess is superior to that of his squad, as evidenced by being its only survivor. His assistance in dealing with his manipulated comrades was vital in buying time for Tanjiro and Inosuke to defeat Mother. Since the puppets had their powers augmented because of the demon's Blood Demon Art, his ability to hold them back was a testament of his above average performance. He was also able to reach the last stage in the Hashira Training program, which very few members could do."
+  },
+  {
+    "id": 20,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "demon slayer",
+    "name": "Kanao Tsuyuri",
+    "image": "Image/img20.png",
+    "description": "Kanao Tsuyuri (栗つ花ゆ落り カナヲ Tsuyuri Kanao?) is a major supporting character of Demon Slayer: Kimetsu no Yaiba. She is a Demon Slayer of the Demon Slayer Corps, Shinobu Kocho's Tsuguko and the adopted sister of Shinobu and Kanae Kocho.",
+    "abilities": "Kanao is the Tsuguko of Kanae Kocho and Shinobu Kocho who has been personally trained by the both of them in the art of combat. As such, Kanao possesses extremely refined physical abilities, sharpened skills and prowess that potentially marks her as a future member of the Demon Slayer Corps' Hashira. Tanjiro Kamado, another promising candidate, even states that, during their first meeting together, he could already sense that Kanao was the closest to the Hashira out of the existing Demon Slayers, just by smelling her scent and feeling her aura, which further confirms her skills."
+  },
+  {
+    "id": 21,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Swordsmiths",
+    "name": "Hotaru Haganezuka",
+    "image": "Image/img21.png",
+    "description": "Murata (村むら田た Murata?) is a supporting character of Demon Slayer: Kimetsu no Yaiba. He is a member of the Demon Slayer Corps and an ally of Tanjiro Kamado.",
+    "abilities": "Being a swordsmith, Hotaru initially did not appear to have any kind of superhuman abilities similar to Demon Slayers. However, after Tanjiro broke his Nichirin Sword multiple times against members of the Lower and Upper Ranks, he underwent a special solitary training regimen in the mountains so he could forge a stronger blade for Tanjiro. As such, his physique was greatly enhanced with prominent musculature, enough to even overpower Tanjiro when he pulled away a blade from his hands"
+  },
+  {
+    "id": 22,
+    "category": "human",
+    "type": "demon slayer corps",
+    "family": "Swordsmiths",
+    "name": "Kozo Kanamori",
+    "image": "Image/img22.png",
+    "description": "Kozo Kanamori (鉄か穴な森もり 鋼こう蔵ぞう Kanamori Kōzō?) is a supporting character in Demon Slayer: Kimetsu no Yaiba. He is a swordsmith affiliated with the Demon Slayer Corps and a resident of the Swordsmith Village.",
+    "abilities": "Having no known physical training, Kozo does not have many notable physical abilities. However, he possesses considerable knowledge and experience in sword smithing.Above Average Endurance: Despite being slashed by Gyokko's water tendrils and sustaining several more wounds, Kozo is able to ignore them and continue moving, showing that while he is not on the level of Demon Slayers, he at least has above average physical vitality and endurance."
+  },
+
+  {
+    "id": 23,
+    "category": "demons",
+    "type": "demon",
+    "family": "demon king",
+    "name": "Muzan Kibutsuji",
+    "image": "Image/img23.png",
+    "description": "Muzan Kibutsuji (鬼き舞ぶ辻つじ 無む惨ざん Kibutsuji Muzan?) is the main antagonist of Demon Slayer: Kimetsu no Yaiba. He is the Demon King, the progenitor of all other demons in existence, and the leader of the Twelve Kizuki, an organization made up of the twelve strongest demons under his direct command.",
+    "abilities": "As the Demon King, the first and the progenitor of his kind, Muzan is the strongest demon in existence. Even after dissolving a drug that was supposed to weaken his powers and turn him back into a human, Muzan easily annihilated close to a hundred Demon Slayers in a short period of time effortlessly.[13] In his bout with a marked Giyu Tomioka and Tanjiro Kamado, the former stated that an Upper Rank's strength is incomparable to Muzan's,[14] while the latter was unable to even follow his attacks and could only dodge by pure instinct.[15] After Tanjiro got close to the Demon King, Muzan nonchalantly slashed out Tanjiro's eye,[16] and he later stated that his attacks were too fast for him to detect through smell."
+  },
+  {
+    "id": 24,
+    "category": "demons",
+    "type": "demon",
+    "family": "normalDemon",
+    "name": "Nezuko Kamado",
+    "image": "Image/img24.png",
+    "description": "Nezuko Kamado (竈門かまど 禰ね豆ず子こ Kamado Nezuko?) is the deuteragonist of Demon Slayer: Kimetsu no Yaiba. She is a demon and the younger sister of Tanjiro Kamado and one of the two remaining members of the Kamado family. Formerly a human, she was attacked and transformed into a demon by Muzan Kibutsuji.",
+    "abilities": "Despite not being a member of the Twelve Kizuki, Nezuko is a very powerful demon. Her most prominent trait is her extraordinary growth rate, due to the high amount of blood she received from Muzan Kibutsuji when he turned Nezuko into a demon. This was shown in many battles where she could defeat her enemies despite being overwhelmed by them in the beginning. She has been shown to defeat her enemies by increasing her own physical capabilities, enhancing her regeneration, or developing her own Blood Demon Art in dire situations."
+  },
+  {
+    "id": 25,
+    "category": "demons",
+    "type": "demon",
+    "family": "normalDemon",
+    "name": "Tamayo",
+    "image": "Image/img25.png",
+    "description": "Tamayo (珠たま世よ Tamayo?) is a major supporting character of Demon Slayer: Kimetsu no Yaiba. She is a demon, a skilled doctor, and a close ally of Tanjiro Kamado.",
+    "abilities": "As one of the oldest to ever exist, predating the Twelve Kizuki entirely, and armed with unparalleled knowledge regarding the science and physiology of demons, Tamayo is a very powerful demon. She was able to enchant and distract a platoon of police officers, preventing them from seeing herself, Yushiro, and Tanjiro in plain view and later managed to easily lull Susamaru into accidentally saying Muzan's name, despite the extreme fear nearly all demons possess of him, through the use of her Blood Demon Art. However, her greatest weapon is her vast knowledge regarding medicine and the inner workings of demons. She was able to reverse the transformation of a demon, something that was once thought to be entirely impossible, and played a pivotal role in the eventual death of the Demon King Muzan Kibutsuji by developing a potent drug that drastically diminished his once unequalled physical abilities."
+  },
+  {
+    "id": 26,
+    "category": "demons",
+    "type": "demon",
+    "family": "normalDemon",
+    "name": "Yushiro",
+    "image": "Image/img26.png",
+    "description": "Yushiro (愈ゆ史し郎ろう Yushirō?) is a major supporting character of Demon Slayer: Kimetsu no Yaiba. He is the traveling companion of Tamayo and a close ally of Tanjiro Kamado. Yushiro was turned into a demon by Tamayo when he had a terminal illness.",
+    "abilities": "Yushiro is a demon of mostly unknown strength, although living for a long time under Tamayo, who is herself a deceptively strong demon who could severely weaken Muzan, it is assumed that Yushiro is a competent fighter as well who can make use of Blood Demon Arts. Yushiro for the most part, however, is more of a support combatant, aiding others with his powers to allow them to discern invisible things or otherwise mask his allies' presence. Most impressively, Yushiro is strong enough to wrestle for command against Muzan over a demon, albeit with the help of the Demon Slayers to interrupt Muzan's concentration."
+  },
+  {
+    "id": 27,
+    "category": "demons",
+    "type": "demon",
+    "family": "normalDemon",
+    "name": "Susamaru",
+    "image": "Image/img27.png",
+    "description": "Susamaru (朱す紗さ丸まる Susamaru?), also known as the Temari Demon (手毬鬼 Temari Oni?), was one of the two primary antagonists in the Asakusa Arc of Demon Slayer: Kimetsu no Yaiba, along with Yahaba. She was a demon who was tricked into believing she was a member of the Twelve Kizuki.",
+    "abilities": "Susamaru was a fairly powerful demon, as she was able to hold her own against Tanjiro Kamado and pressure him in battle. Even when Nezuko strengthened herself in order to match Susamaru's power, Tamayo noted that in a drawn-out battle, the Temari Demon would eventually prevail."
+  },
+  {
+    "id": 28,
+    "category": "demons",
+    "type": "demon",
+    "family": "Upper Rank",
+    "name": "Kokushibo",
+    "image": "Image/img28.png",
+    "description": "Kokushibo (黒こく死し牟ぼう Kokushibō?) is a major supporting antagonist of Demon Slayer: Kimetsu no Yaiba. He is a demon affiliated with the Twelve Kizuki, holding the highest position, Upper Rank One (上じょう弦げんの壱いち Jōgen no Ichi?)..",
+    "abilities": "As the highest-ranking member of the Twelve Kizuki, Kokushibo is an extraordinarily powerful demon, second only to the Demon King Muzan Kibutsuji himself. He has battled countless Demon Slayers and has amassed vast experience and knowledge over his nearly 500-year-long life. His abilities have been refined to the highest level, as he is not only a master of Total Concentration Breathing, but also a Marked individual who has gained access to the Transparent World, as well as the demon that possesses the highest concentration of Muzan's blood amongst the Upper Ranks."
+  },
+  {
+    "id": 29,
+    "category": "demons",
+    "type": "demon",
+    "family": "Upper Rank",
+    "name": "Doma",
+    "image": "Image/img29.png",
+    "description": "Doma (童どう磨ま Dōma?) is a major supporting antagonist of Demon Slayer: Kimetsu no Yaiba. He is a demon affiliated with the Twelve Kizuki, holding the second highest position, Upper Rank Two (上じょう弦げんの弐に Jōgen no Ni?)",
+    "abilities": "As the holder of the second highest ranking member of the Twelve Kizuki, and the third most powerful of his kind to have ever existed, Doma is an exceptionally powerful demon. His combination of combative prowess and his potent cryokinetic Blood Demon Art in battle is powerful enough to overwhelm and defeat the Insect Hashira, Shinobu Kocho, without any difficulty,[21][22] and he is also noted to have defeated Kanae Kocho, the late Flower Hashira, in the past.[23] Afterwards, Doma could take on both Inosuke and Kanao, who were on par with the Hashira, simultaneously without much effort either."
+  },
+  {
+    "id": 30,
+    "category": "demons",
+    "type": "demon",
+    "family": "Upper Rank",
+    "name": "Akaza",
+    "image": "Image/img30.png",
+    "description": "Akaza (猗あ窩か座ざ Akaza?) is a major supporting antagonist of Demon Slayer: Kimetsu no Yaiba. He is a demon affiliated with the Twelve Kizuki, holding the position of Upper Rank Three (上じょう弦げんの参さん Jōgen no San?).",
+    "abilities": "As the third highest-ranking member of the Twelve Kizuki, Akaza was an exceptionally powerful demon and the fourth strongest in existence after Doma, Kokushibo, and Muzan Kibutsuji. Even as a human child without martial arts training, Akaza could defeat and render grown men unconscious on his own.[14] At the age of 18, after mastering the Soryu Style (素そ流りゅう式しき Soryū Shiki?) from Keizo, he singlehandedly annihilated 67 trained adult swordsmen with his bare fists, to the point where Muzan initially thought it was a demon who had killed all these men"
+  },
+  {
+    "id": 31,
+    "category": "demons",
+    "type": "demon",
+    "family": "Upper Rank",
+    "name": "Nakime",
+    "image": "Image/img31.png",
+    "description": "Nakime (鳴なき女め Nakime?) is a recurring character and a supporting antagonist in the Infinity Castle Arc of Demon Slayer: Kimetsu no Yaiba. She is a demon who owns and controls the Infinity Castle and serves directly under Muzan Kibutsuji.",
+    "abilities": "Despite not displaying much in terms of fighting ability, as the holder of the fourth highest position in the Twelve Kizuki, Nakime is nonetheless an extremely powerful demon. She was capable of using her unorthodox Blood Demon Art to thwart the efforts of Obanai and Mitsuri at beheading her and stall the two Hashira for most of their battle, with neither of the two skilled combatants being able to so much as scratch her."
+  },
+  {
+    "id": 32,
+    "category": "demons",
+    "type": "demon",
+    "family": "Upper Rank",
+    "name": "Hantengu",
+    "image": "Image/img32.png",
+    "description": "Hantengu (半はん天てん狗ぐ Hantengu?), along with Gyokko, was one of the primary antagonists in the Swordsmith Village Arc of Demon Slayer: Kimetsu no Yaiba. He was a demon affiliated with the Twelve Kizuki, holding the position of Upper Rank Four (上じょう弦げんの肆し Jōgen no Shi?).",
+    "abilities": "As the holder of the fourth highest title in the Twelve Kizuki, Hantengu was an extremely powerful demon. Through his Blood Demon Art, he is able to create four clones that were manifestations of his emotions, each of them possessing an Upper Rank demon's level of strength and having their own unique power, allowing him to outnumber and overwhelm the Demon Slayers that tried to slay him and giving him a wide arsenal. Most notoriously about Hantengu's unique power is that he takes advantage of the traditional method of decapitation to kill a demon, as beheading Hantengu's primary form will cause Sekido and Karaku to emerge and engage the threat. Beheading the first two manifestations further will then result in the release of Aizetsu and Urogi, and any subsequent decapitations of the clones will prove futile if Hantengu remains alive, or in Urogi's case, severed body parts can even use his Blood Demon Art to attack an opponent."
+  },
+  {
+    "id": 33,
+    "category": "demons",
+    "type": "demon",
+    "family": "Upper Rank",
+    "name": "Gyokko",
+    "image": "Image/img33.png",
+    "description": "Gyokko (玉ぎょ壺っこ Gyokko?), along with Hantengu, was one of the primary antagonists in the Swordsmith Village Arc of Demon Slayer: Kimetsu no Yaiba. He was a demon affiliated with the Twelve Kizuki, holding the position of Upper Rank Five (上じょう弦げんの伍ご Jōgen no Go?).",
+    "abilities": "As the holder of the fifth highest position in the Twelve Kizuki, Gyokko was an extremely powerful demon. His unique Blood Demon Art and techniques allow him to easily outclass the average demons and give him the necessary edge to overwhelm and kill even the Hashira, the most skilled and powerful swordsman in the Demon Slayer Corps. As Upper Rank Five, Gyokko is more powerful than Gyutaro and Daki, the former having killed 15 Hashira and the latter having killed 7.[4] Gyokko has displayed many impressive feats, such as spawning a plethora of powerful demon-like creatures with unique attacks, highly unorthodox movement both within and out of his pots, and a second hidden form. Most notably, in his duel with Muichiro Tokito,."
+  },
+  {
+    "id": 34,
+    "category": "demons",
+    "type": "demon",
+    "family": "Upper Rank",
+    "name": "Gyutaro",
+    "image": "Image/img34.png",
+    "description": "Gyutaro (妓夫ぎゅう太た郎ろう Gyūtarō?) was one of the primary antagonists in the Entertainment District Arc of Demon Slayer: Kimetsu no Yaiba. He was a demon affiliated with the Twelve Kizuki, holding the position of Upper Rank Six (上じょう弦げんの陸ろく Jōgen no Roku?), a position he shared with his younger sister, Daki.",
+    "abilities": "As the true Upper Rank Six, Gyutaro was an extremely powerful demon with over a century's worth of combat experience under his belt, having killed and devoured 15 Hashira in the past.[8] His strength and his abilities were made evident when he was able to easily combat both Tengen Uzui, the Sound Hashira of the Demon Slayer Corps, and Tanjiro Kamado, a talented Demon Slayer who had fought Lower Rank demons in the past, at the same time and eventually overwhelm them in battle. Even when the battle turned in the favor of the Demon Slayers, Gyutaro and Daki quickly managed to take control of the situation and drive them into a corner."
+  },
+  {
+    "id": 35,
+    "category": "demons",
+    "type": "demon",
+    "family": "Upper Rank",
+    "name": "Daki",
+    "image": "Image/img35.png",
+    "description": "Daki (堕だ姫き Daki?) was one of the primary antagonists in the Entertainment District Arc of Demon Slayer: Kimetsu no Yaiba. She was a demon affiliated with the Twelve Kizuki, being the secondary holder of the position of Upper Rank Six (上じょう弦げんの陸ろく Jōgen no Roku?),[5] a position she shared with the primary holder, her older brother, Gyutaro.",
+    "abilities": "As the secondary holder of Upper Rank Six, Daki was an extremely powerful demon, having killed and devoured seven Hashira in the past. Her flesh detachment in the form of an sentient obi sash was strong enough to hold off the combined efforts of Zenitsu Agatsuma, Inosuke Hashibira, Makio, and Suma, the former two being seasoned Demon Slayers while the latter two being experienced kunoichi. Even while weakened due to dispersing her power through her obi across the city, she already proved a handful for Tanjiro Kamado, who had begun to actively use the Hinokami Kagura in combat."
+  },
+  {
+    "id": 36,
+    "category": "demons",
+    "type": "demon",
+    "family": "Lower Rank",
+    "name": "Enmu",
+    "image": "Image/img36.png",
+    "description": "Enmu (魘えん夢む Enmu?) was the primary antagonist in the Mugen Train Arc of Demon Slayer: Kimetsu no Yaiba. He was a demon affiliated with the Twelve Kizuki, holding the position of Lower Rank One (下か弦げんの壱いち Kagen no Ichi?)",
+    "abilities": "As Lower Rank One, Enmu was the strongest Lower Rank and closest to matching the strength of the Upper Ranks. Upon receiving more blood from Muzan Kibutsuji, his abilities were further enhanced. This level of ability was shown when Enmu's shapeshifting ability evolved to the point he was able fuse with a vehicle as big as a train. Additionally, his unorthodox sleep-based Blood Demon Art enabled him to render over 200 passengers in the Mugen Train, including the likes of the Hashira Kyojuro Rengoku, asleep and almost completely vulnerable"
+  },
+  {
+    "id": 37,
+    "category": "demons",
+    "type": "demon",
+    "family": "Lower Rank",
+    "name": "Rokuro",
+    "image": "Image/img37.png",
+    "description": "Rokuro (轆ろく轤ろ Rokuro?) was a member of the Twelve Kizuki, having held the position of Lower Rank Two (下か弦げんの弐に Kagen no Ni?).",
+    "abilities": "As Lower Rank Two, Rokuro was the second strongest demon among the Lower Ranks, though his true strength is unknown. He would have evidently been a very strong demon as the only demon ranked above him was the very powerful Enmu, and he claims that he can acclimate a portion of Muzan's blood without fail, which has been shown to induce torturous pain even in low amounts. Muzan's statement that the extremely formidable Rui can match Lower Rank Two and One in strength could be a potential hint to Rokuro's power."
+  },
+  {
+    "id": 38,
+    "category": "demons",
+    "type": "demon",
+    "family": "Lower Rank",
+    "name": "Wakuraba",
+    "image": "Image/img38.png",
+    "description": "Wakuraba (病わくら葉ば Wakuraba?) was a member of the Twelve Kizuki, having held the position of Lower Rank Three (下か弦げんの参さん Kagen no San?)",
+    "abilities": " As Lower Three of the Twelve Kizuki, Wakuraba was undoubtedly a very powerful demon. He claimed that he was able to rise up in rank, indicating that he initially was Lower Six and was strong enough to move up. However, his true strength remains unknown due to the Demon King's act of killing him, and it was apparent that he paled in comparison to the likes of Rui and Enmu. He at least showed enough confidence in himself when he plotted to try and escape his master in an unfamiliar location."
+  },
+  {
+    "id": 39,
+    "category": "demons",
+    "type": "demon",
+    "family": "Lower Rank",
+    "name": "Mukago",
+    "image": "Image/img39.png",
+    "description": "Mukago (零む余か子ご Mukago?) was a member of the Twelve Kizuki, having held the position of Lower Rank Four (下か弦げんの肆し Kagen no Shi?).",
+    "abilities": " Little was known about Mukago's strength and abilities as a demon, but it can be assumed that she was stronger than an average demon and superior in power to Kamanue, as she was given a higher Lower Rank position than him."
+  },
+  {
+    "id": 40,
+    "category": "demons",
+    "type": "demon",
+    "family": "Lower Rank",
+    "name": "Rui",
+    "image": "Image/img40.png",
+    "description": "Rui (累るい Rui?) was the primary antagonist in the Mount Natagumo Arc of Demon Slayer: Kimetsu no Yaiba. He was a demon affiliated with the Twelve Kizuki, holding the position of Lower Rank Five (下か弦げんの伍ご Kagen no Go?)",
+    "abilities": " As Lower Rank Five of the Twelve Kizuki, Rui was a very powerful demon. His strength and power easily surpassed that of most other demons, since he was easily able to conquer and cohere numerous demons of Mount Natagumo and force them to work for him and become members of his family. Evidence of his strength was further shown when he was able to easily overwhelm a talented fighter like Tanjiro Kamado. Furthermore, demons empowered through his blood were strong enough to kill scores of Demon Slayers easily. However, Rui's power still paled in comparison to the Hashira, having his technique easily overcome and later was effortlessly decapitated by Giyu Tomioka"
+  }
+]

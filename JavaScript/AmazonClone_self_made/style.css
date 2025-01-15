@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  /* position: fixed; */
+
+  display: flex;
+  background-color: #131921;
+  padding: 10px 30px;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .logo img {
+  color: white;
+  object-fit: cover;
+  width: 120px;
+}
+.country-current {
+  display: flex;
+  gap: 2px;
+  color: white;
+}
+
+.country-current .text {
+  width: 70px;
+}
+.input-box {
+  padding: relative;
+}
+.country-current .text,
+.cart,
+.returns,
+.language {
+  color: white;
+}
+.input-box input {
+  padding: 5px;
+  width: 500px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  height: 40px;
+}
+.search {
+  background-color: #f3a847;
+  padding: 10px;
+  height: 40px;
+  width: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  left: 805px;
+  top: 14px;
+}
+.search .se {
+  font-size: 20px;
+  color: #131921;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
+.account {
+  width: 90px;
+  color: white;
+}
+.account p {
+  font-size: 14px;
+}
+.account span {
+  font-weight: 800;
+}
+
+/* display */
+/* .container {
+  display: flex;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
